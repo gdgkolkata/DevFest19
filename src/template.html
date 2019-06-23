@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="<%= htmlWebpackPlugin.files.publicPath %>">
+    <script>
+        window.GlobalVars = { rootPath: '<%= htmlWebpackPlugin.files.publicPath %>' };
+    </script>
+    <meta charset="utf-8">
+    <title>GDG Kolkata DevFest 2019</title>
+    <link rel="dns-prefetch" href="https://apis.google.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://res.cloudinary.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="GDG Kolkata DevFest 2019, 3rd August, 2019">
+    <meta itemprop="name" content="GDG Kolkata DevFest 2019">
+    <meta itemprop="description" content="GDG Kolkata DevFest 2019, 3rd August, 2019">
+    <meta itemprop="url" content="http://devfest.gdgkolkata.org">
+    <meta itemprop="location" content="Kolkata">
+    <meta property="og:type" content="Event">
+     <meta property="og:title" content="GDG Kolkata DevFest 2019">
+    <meta property="og:site_name" content="GDG Kolkata DevFest 2019">
+    <meta property="og:description" content="GDG Kolkata DevFest 2019, 3rd August, 2019">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="<%= htmlWebpackPlugin.files.publicPath %>assets/favicon.png">
+    <link rel="apple-touch-icon" href="<%= htmlWebpackPlugin.files.publicPath %>assets/favicon.png">
+    <link rel="icon" href="<%= htmlWebpackPlugin.files.publicPath %>assets/favicon.png">
+    <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700" rel="stylesheet">
+    <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.7/pwacompat.min.js"
+        integrity="sha384-ptgwb3/v69WGur7IwSnWOowVxE7hcRB3DG/EiHdejrw2sFNwUHynFbiRMPxc4hdS"
+        crossorigin="anonymous"></script>
+    <% if (htmlWebpackPlugin.options.manifest.theme_color) { %>
+    <meta name="theme-color" content="<%= htmlWebpackPlugin.options.manifest.theme_color %>">
+    <% } %>
+    <% for (var chunk of webpack.chunks) { %>
+    <% if (chunk.names.length === 1 && chunk.names[0] === 'polyfills') continue; %>
+    <% for (var file of chunk.files) { %>
+    <% if (htmlWebpackPlugin.options.preload && file.match(/\.(js|css)$/)) { %>
+    <link rel="preload" href="<%= htmlWebpackPlugin.files.publicPath + file %>"
+        as="<%= file.match(/\.css$/)?'style':'script' %>">
+    <% } else if (file.match(/manifest\.json$/)) { %>
+    <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath + file %>">
+    <% } %>
+    <% } %>
+    <% } %>
+
+</head>
+
+<body>
+    <%= htmlWebpackPlugin.options.ssr({
+			url: '/'
+    }) %>
+    <script defer src="<%= htmlWebpackPlugin.files.chunks['bundle'].entry %>"></script>
+    <script>
+        window.fetch || document.write('<script src="<%= htmlWebpackPlugin.files.chunks["polyfills"].entry %>"><\/script>')
+    </script>
+    <script>
+        window.dispatchEvent(new CustomEvent('showSnack', { detail: { message: "content is now available offline" } }));
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('<%= htmlWebpackPlugin.files.publicPath %>sw.js', { scope: '<%= htmlWebpackPlugin.files.publicPath %>' }).then(reg => {
+                reg.onupdatefound = () => {
+                    var installingWorker = reg.installing;
+                    installingWorker.onstatechange = () => {
+                        switch (installingWorker.state) {
+                            case 'installed':
+                                if (navigator.serviceWorker.controller) {
+                                    window.swUpdate = true;
+                                    window.dispatchEvent(new CustomEvent('showRefreshSnack', null));
+                                }
+                                break;
+                            case 'redundant':
+                                console.error('The installing service worker became redundant.');
+                                break;
+                        }
+                    }
+                }
+            }).catch(e => {
+                console.error('Error during service worker registration:', e);
+            })
+        }
+    </script>
+</body>
+
+</html>
