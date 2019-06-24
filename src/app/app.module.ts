@@ -1,10 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './shared/material.module';
+
+import { AppComponent } from './app.component';
 import { HomeComponent } from './core/home/home.component';
 import { SpeakersComponent } from './core/speakers/speakers.component';
 import { ScheduleComponent } from './core/schedule/schedule.component';
@@ -22,9 +23,10 @@ import { BlogComponent } from './core/blog/blog.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    HttpClientModule,
+    AppRoutingModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

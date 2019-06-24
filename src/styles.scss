@@ -9,5 +9,32 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .container {
   max-width: 1280px;
   margin: auto;
-  padding: 32px;
+  $pad: 32px;
+  padding: 0 $pad;
+
+  &.pad-all {
+    padding: $pad;
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+button, a[class*="-button"] {
+  text-transform: uppercase;
+}
+
+.top-gap {
+  margin-top: 80px;
+  height: 230px;
+
+  .mat-display-2 {
+    margin-bottom: 35px;
+  }
+
+  .description {
+    max-width: 600px;
+    line-height: 1.4;
+  }
 }

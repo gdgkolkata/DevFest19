@@ -28,11 +28,6 @@
   }
 }
 
-.container {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .topbar {
   position: sticky;
   top: 0;
@@ -58,7 +53,6 @@
   }
 
   .buy-ticket {
-    text-transform: uppercase;
     margin-right: 8px;
   }
 }
@@ -69,11 +63,4 @@
 
 mat-nav-list .router-link-active {
   font-weight: 500;
-}
-
-// main {
-// }
-
-.spacer {
-  flex: 1 1 auto;
 }
