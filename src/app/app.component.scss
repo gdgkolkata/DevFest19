@@ -34,9 +34,7 @@
   z-index: 2;
   background-color: #fff;
   padding: 0;
-  @media (min-width: 600px) {
-    height: 80px;
-  }
+  height: 80px;
 
   .home-link {
     height: 100%;
@@ -63,4 +61,14 @@
 
 mat-nav-list .router-link-active {
   font-weight: 500;
+}
+
+@media (max-width: 599px) {
+  .topbar {
+    height: 56px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
 }

@@ -17,10 +17,10 @@
       <mat-toolbar class="topbar">
         <button type="button" aria-label="Toggle sidenav"
           mat-icon-button (click)="drawer.toggle()"
-          *ngIf="isHandset$ | async">
+          *ngIf="isBreakpoint$ | async">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-        <ng-container *ngIf="!(isHandset$ | async)">
+        <ng-container *ngIf="!(isBreakpoint$ | async); else iconButtons">
           <a routerLink="/" class="home-link"></a>
           <span class="spacer"></span>
           <nav mat-tab-nav-bar disableRipple>
@@ -34,10 +34,16 @@
             <a mat-tab-link>sign in</a>
           </nav>
           <a mat-flat-button color="primary" class="buy-ticket">buy ticket</a>
-          <button mat-icon-button aria-label="Notification">
-            <mat-icon>notifications_none</mat-icon>
-          </button>
         </ng-container>
+        <ng-template #iconButtons>
+          <span class="spacer"></span>
+          <button mat-icon-button aria-label="Sign In">
+            <mat-icon>account_circle</mat-icon>
+          </button>
+        </ng-template>
+        <button mat-icon-button aria-label="Notification">
+          <mat-icon>notifications_none</mat-icon>
+        </button>
       </mat-toolbar>
     </div>
     <main>

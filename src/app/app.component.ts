@@ -16,12 +16,12 @@ interface NavLink {
 export class AppComponent {
   siteName: string;
   navLinks: NavLink[];
-  isHandset$: Observable<boolean>;
+  isBreakpoint$: Observable<boolean>;
 
   constructor(private breakpointObserver: BreakpointObserver) {
     this.siteName = 'GDG Kolkata DevFest 2019';
     this.createRoutes();
-    this.isHandset$ = this.breakpointObserver
+    this.isBreakpoint$ = this.breakpointObserver
       .observe(Breakpoints.Handset)
       .pipe(map(result => result.matches));
   }
