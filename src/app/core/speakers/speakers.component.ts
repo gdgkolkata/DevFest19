@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from 'src/app/shared/services/app.service';
+import { Observable } from 'rxjs';
+import { Speaker } from 'src/app/shared/interfaces/speaker';
 
 @Component({
   selector: 'app-speakers',
@@ -7,7 +9,7 @@ import { AppService } from 'src/app/shared/services/app.service';
   styleUrls: ['./speakers.component.scss']
 })
 export class SpeakersComponent implements OnInit {
-  speakers$;
+  speakers$: Observable<Speaker[]>;
 
   constructor(private appService: AppService) {}
 

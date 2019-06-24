@@ -1,0 +1,15 @@
+mat-card {
+  text-align: center;
+  padding: 32px;
+}
+
+img {
+  $size: 128px;
+  height: $size;
+  width: $size;
+  border-radius: 50%;
+}
+
+.description {
+  margin-top: 16px;
+}

@@ -14,6 +14,7 @@
   </button>
 </div>
 <mat-divider></mat-divider>
-<div class="container pad-all">
-
+<div class="container pad-all speaker-container">
+  <app-speaker *ngFor="let speaker of speakers$ | async"
+    [speaker]="speaker"></app-speaker>
 </div>
