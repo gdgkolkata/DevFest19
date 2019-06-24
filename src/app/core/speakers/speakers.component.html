@@ -1,1 +1,19 @@
-speakers works!
+<div class="container">
+  <div class="top-gap">
+    <div class="mat-display-2">Speakers</div>
+    <div class="description">
+      Hear from the Googlers, Partners, and Guest Speakers who are building the future of cloud.
+      Check back often as we add more speakers, including our customers and partners.
+    </div>
+  </div>
+</div>
+<mat-divider></mat-divider>
+<div class="container filter">
+  <button mat-button color="primary">
+    filter <mat-icon>filter_list</mat-icon>
+  </button>
+</div>
+<mat-divider></mat-divider>
+<div class="container pad-all">
+  {{speakers$ | async | json}}
+</div>
