@@ -22,7 +22,10 @@ export class AppComponent {
     this.siteName = 'GDG Kolkata DevFest 2019';
     this.createRoutes();
     this.isBreakpoint$ = this.breakpointObserver
-      .observe(Breakpoints.Handset)
+      .observe([
+        Breakpoints.Small,
+        Breakpoints.XSmall
+      ])
       .pipe(map(result => result.matches));
   }
 
