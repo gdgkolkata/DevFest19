@@ -13,8 +13,8 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <div class="container">
-      <mat-toolbar class="topbar">
+    <mat-toolbar class="topbar">
+      <div class="container">
         <button type="button" aria-label="Toggle sidenav"
           mat-icon-button (click)="drawer.toggle()"
           *ngIf="isBreakpoint$ | async">
@@ -44,8 +44,8 @@
         <button mat-icon-button aria-label="Notification">
           <mat-icon>notifications_none</mat-icon>
         </button>
-      </mat-toolbar>
-    </div>
+      </div>
+    </mat-toolbar>
     <main>
       <router-outlet></router-outlet>
     </main>
