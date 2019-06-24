@@ -1,0 +1,79 @@
+.sidenav-container {
+  height: 100%;
+  background-color: #fff;
+}
+
+.sidenav {
+  width: 256px;
+}
+
+.home-link {
+  background-image: url('/assets/img/gdgkol.png');
+  background-size: cover;
+  background-position-y: center;
+}
+
+.site-name {
+  height: 150px;
+  width: 150px;
+}
+
+.sidenav-header {
+  padding: 0 16px 30px;
+  .duration, .location {
+    margin-bottom: 0;
+  }
+  .location {
+    color: rgb(117, 117, 117);
+  }
+}
+
+.container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+  padding: 0;
+  @media (min-width: 600px) {
+    height: 80px;
+  }
+
+  .home-link {
+    height: 100%;
+    width: 100px;
+  }
+
+  [mat-tab-nav-bar] {
+    text-transform: uppercase;
+    border-bottom: none;
+
+    [mat-tab-link] {
+      min-width: 72px;
+    }
+  }
+
+  .buy-ticket {
+    text-transform: uppercase;
+    margin-right: 8px;
+  }
+}
+
+[mat-list-item] {
+  text-transform: capitalize;
+}
+
+mat-nav-list .router-link-active {
+  font-weight: 500;
+}
+
+// main {
+// }
+
+.spacer {
+  flex: 1 1 auto;
+}
