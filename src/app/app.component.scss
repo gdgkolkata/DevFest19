@@ -29,12 +29,11 @@
 }
 
 .topbar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 2;
-  background-color: #fff;
+  z-index: 4;
+  background: rgba(255, 255, 255, 0);
   padding: 0;
-  height: 80px;
 
   .container {
     width: 100%;
@@ -48,9 +47,10 @@
     width: 100px;
   }
 
-  [mat-tab-nav-bar] {
+  .top-nav-bar {
     text-transform: uppercase;
     border-bottom: none;
+    height: 100%;
 
     [mat-tab-link] {
       min-width: 72px;
@@ -70,12 +70,18 @@ mat-nav-list .router-link-active {
   font-weight: 500;
 }
 
-@media (max-width: 960px) {
-  .topbar {
-    height: 56px;
-  }
+main {
+  padding-top: 64px;
+}
 
+@media (max-width: 960px) {
   .container {
     padding: 0 16px;
+  }
+}
+
+@media (max-width: 599px) {
+  main {
+    padding-top: 56px;
   }
 }

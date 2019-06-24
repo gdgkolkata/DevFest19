@@ -12,8 +12,8 @@
         [routerLink]="link.path">{{link.label}}</a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar class="topbar mat-elevation-z4">
+  <mat-sidenav-content cdkScrollable>
+    <mat-toolbar class="topbar">
       <div class="container">
         <button type="button" aria-label="Toggle sidenav"
           mat-icon-button (click)="drawer.toggle()"
@@ -23,7 +23,7 @@
         <ng-container *ngIf="!(isBreakpoint$ | async); else iconButtons">
           <a routerLink="/" class="home-link"></a>
           <span class="spacer"></span>
-          <nav mat-tab-nav-bar disableRipple>
+          <nav mat-tab-nav-bar disableRipple class="top-nav-bar">
             <a mat-tab-link
                 *ngFor="let link of navLinks"
                 [routerLink]="link.path"
