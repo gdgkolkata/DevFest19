@@ -1,8 +1,8 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Component, OnInit, AfterViewInit, Renderer2 } from '@angular/core';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { ScrollDispatcher, CdkScrollable } from '@angular/cdk/scrolling';
-import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { map, distinctUntilChanged } from 'rxjs/operators';
 
 interface NavLink {
   label: string;
@@ -21,7 +21,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   constructor(
     private breakpointObserver: BreakpointObserver,
-    private scrollDispatcher: ScrollDispatcher
+    private scrollDispatcher: ScrollDispatcher,
+    private renderer: Renderer2
   ) {
     this.siteName = 'GDG Kolkata DevFest 2019';
     this.createRoutes();
@@ -43,20 +44,32 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.scrollDispatcher.scrolled().subscribe((el: CdkScrollable) => {
-      const completionPixel = 60;
-      const offsetTop = el.measureScrollOffset('top');
-      function calculateProperty(propFinalValue: number): number {
-        const value = (offsetTop * propFinalValue) / completionPixel;
-        return value > propFinalValue ? propFinalValue : value;
-      }
-      el.getElementRef().nativeElement.firstElementChild.setAttribute(
-        'style',
-        `background: rgba(255,255,255,${calculateProperty(1.0)}); box-shadow:` +
-          `0 2px 04px -1px rgba(0,0,0,${calculateProperty(0.2)}), ` +
-          `0 4px 05px  0   rgba(0,0,0,${calculateProperty(0.14)}), ` +
-          `0 1px 10px  0   rgba(0,0,0,${calculateProperty(0.12)})`
+    const completionPixel = 60;
+    this.scrollDispatcher
+      .scrolled()
+      .pipe(
+        map((el: CdkScrollable) => {
+          const offsetTop = el.measureScrollOffset('top');
+          function calculateProperty(propFinalValue: number): number {
+            const value = (offsetTop * propFinalValue) / completionPixel;
+            return value > propFinalValue ? propFinalValue : value;
+          }
+          const background =
+            `background: rgba(255,255,255,${calculateProperty(1)})`;
+          const boxShadow =
+            'box-shadow: ' +
+            `0 2px 04px -1px rgba(0,0,0,${calculateProperty(0.2)}), ` +
+            `0 4px 05px  0   rgba(0,0,0,${calculateProperty(0.14)}), ` +
+            `0 1px 10px  0   rgba(0,0,0,${calculateProperty(0.12)})`;
+          return {
+            style: `${background};${boxShadow}`,
+            topBar: el.getElementRef().nativeElement.firstElementChild
+          };
+        }),
+        distinctUntilChanged((x, y) => x.style === y.style)
+      )
+      .subscribe(({ style, topBar }) =>
+        this.renderer.setAttribute(topBar, 'style', style)
       );
-    });
   }
 }

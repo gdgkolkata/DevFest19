@@ -71,7 +71,7 @@ mat-nav-list .router-link-active {
 }
 
 main {
-  padding-top: 64px;
+  padding-top: 56px;
 }
 
 @media (max-width: 960px) {
@@ -80,8 +80,8 @@ main {
   }
 }
 
-@media (max-width: 599px) {
+@media (min-width: 600px) {
   main {
-    padding-top: 56px;
+    padding-top: 64px;
   }
 }
