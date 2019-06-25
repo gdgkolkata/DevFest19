@@ -7,11 +7,30 @@
     </div>
   </div>
 </div>
-<mat-divider></mat-divider>
-<div class="container filter">
-  <button mat-button color="primary">
-    filter <mat-icon>filter_list</mat-icon>
-  </button>
+<mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+<mat-divider *ngIf="!isLoading"></mat-divider>
+<div class="container filter-container">
+  <div class="filter-actions">
+    <span class="mat-subheading-2">
+      {{filters.length ? '26 results' : ''}}
+    </span>
+    <span class="spacer"></span>
+    <button mat-button color="primary" *ngIf="filters.length" (click)="clearAll()">
+      clear all
+    </button>
+    <button mat-button color="primary">
+      filters <mat-icon>filter_list</mat-icon>
+    </button>
+  </div>
+  <div class="filters">
+    <mat-chip-list aria-label="Filters">
+      <mat-chip *ngFor="let filter of filters; index as i"
+        removable="true" (removed)="removeFilter(i)">
+        {{filter}}
+        <mat-icon matChipRemove>cancel</mat-icon>
+      </mat-chip>
+    </mat-chip-list>
+  </div>
 </div>
 <mat-divider></mat-divider>
 <div class="container pad-all speaker-container">

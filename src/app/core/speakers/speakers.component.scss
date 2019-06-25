@@ -1,9 +1,20 @@
-.filter {
-  display: grid;
-  justify-content: end;
-  button {
-    margin: 16px 0;
+.filter-container {
+  $pad: 16px;
+  padding-top: $pad;
+  padding-bottom: $pad;
+}
+
+.filter-actions {
+  display: flex;
+  align-items: center;
+
+  .mat-subheading-2 {
+    margin: 0;
   }
+}
+
+.filters {
+  margin-top: 4px;
 }
 
 .speaker-container {
