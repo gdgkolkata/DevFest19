@@ -1,5 +1,6 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport role="dialog" mode="over">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+    role="dialog" mode="over" (click)="drawer.close()">
     <div class="site-name home-link"></div>
     <div class="sidenav-header">
       <div class="duration mat-headline">August 03, 2019</div>
