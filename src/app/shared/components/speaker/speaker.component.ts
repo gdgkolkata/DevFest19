@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Speaker } from '../../interfaces/speaker';
 import { fade } from '../../animations/animations';
 
@@ -8,9 +8,16 @@ import { fade } from '../../animations/animations';
   styleUrls: ['./speaker.component.scss'],
   animations: [fade]
 })
-export class SpeakerComponent {
+export class SpeakerComponent implements OnInit {
   @Input() speaker: Speaker;
   showImg: boolean;
+
+  ngOnInit() {
+    const limit = 100;
+    if (this.speaker.bio.length > limit) {
+      this.speaker.bio = `${this.speaker.bio.substr(0, limit).trimRight()}...`;
+    }
+  }
 
   loadImg() {
     this.showImg = true;
