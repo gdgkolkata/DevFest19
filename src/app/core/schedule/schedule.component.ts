@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./schedule.component.scss']
 })
 export class ScheduleComponent implements OnInit {
+  programDate = '2019-09-01';
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  onFiltersUpdated(filters: { tags: string[]; complexities: string[] }) {
+    console.log(filters);
   }
-
 }

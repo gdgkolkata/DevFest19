@@ -1,0 +1,31 @@
+.filter {
+  display: grid;
+  justify-content: end;
+  align-content: center;
+  button {
+    margin: 16px 0;
+    .button-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  box-shadow: 2px 2px 4px grey;
+  .tags {
+    margin-bottom: 1rem;
+    .tag {
+      margin-right: 0.5rem;
+      cursor: pointer;
+    }
+    .selected {
+      background-color: #ff4081;
+      color: white;
+    }
+  }
+}
