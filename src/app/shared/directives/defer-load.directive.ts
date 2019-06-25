@@ -10,19 +10,19 @@ import {
   selector: '[appDeferLoad]'
 })
 export class DeferLoadDirective implements AfterViewInit {
-  @Output() public appDeferLoad: EventEmitter<any> = new EventEmitter();
+  @Output() appDeferLoad = new EventEmitter<void>();
   private intersectionObserver: IntersectionObserver;
 
   constructor(private element: ElementRef) {}
 
   ngAfterViewInit() {
-    this.intersectionObserver = new IntersectionObserver(entries => {
-      this.checkForIntersection(entries);
-    }, {});
+    this.intersectionObserver = new IntersectionObserver(entries =>
+      this.checkForIntersection(entries)
+    );
     this.intersectionObserver.observe(this.element.nativeElement as Element);
   }
 
-  private checkForIntersection(entries: Array<IntersectionObserverEntry>) {
+  private checkForIntersection(entries: IntersectionObserverEntry[]) {
     entries.forEach((entry: IntersectionObserverEntry) => {
       if (this.checkIfIntersecting(entry)) {
         this.appDeferLoad.emit();
