@@ -15,7 +15,7 @@ export class SpeakerComponent implements OnInit {
   ngOnInit() {
     const limit = 100;
     if (this.speaker.bio.length > limit) {
-      this.speaker.bio = `${this.speaker.bio.substr(0, limit).trimRight()}...`;
+      this.speaker.bio = `${this.speaker.bio.substr(0, limit).trim()}...`;
     }
   }
 
