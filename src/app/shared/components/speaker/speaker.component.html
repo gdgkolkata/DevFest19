@@ -1,5 +1,8 @@
 <mat-card>
-  <img [src]="speaker.profilePicture" alt="Profile picture">
+  <div class="img-container" (appDeferLoad)="showImg=true">
+    <img [src]="speaker.profilePicture" alt="Profile picture"
+      *ngIf="showImg" @fade>
+  </div>
   <div class="description">
     <span class="mat-headline">{{speaker.fullName}}</span>
     <div class="mat-subheading-1">{{speaker.tagLine}}</div>

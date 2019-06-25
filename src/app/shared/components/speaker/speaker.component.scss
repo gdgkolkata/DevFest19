@@ -3,11 +3,20 @@ mat-card {
   padding: 32px;
 }
 
-img {
+.img-container {
   $size: 128px;
   height: $size;
   width: $size;
+  margin: auto;
   border-radius: 50%;
+  overflow: hidden;
+  background-color: rgb(245, 245, 245);
+  display: grid;
+  place-content: center;
+  img {
+    height: inherit;
+    width: inherit;
+  }
 }
 
 .description {
