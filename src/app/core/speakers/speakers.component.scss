@@ -1,7 +1,12 @@
-.filter-container {
+%padding {
   $pad: 16px;
   padding-top: $pad;
   padding-bottom: $pad;
+}
+
+.filter-container {
+  @extend %padding;
+  position: relative;
 }
 
 .filter-actions {
@@ -20,4 +25,21 @@
 .speaker-container {
   display: grid;
   gap: 20px;
+}
+
+.filter-popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 8;
+  padding: 0;
+
+  .mat-subheading-2 {
+    margin-bottom: 10px;
+  }
+
+  .container {
+    @extend %padding;
+  }
 }
