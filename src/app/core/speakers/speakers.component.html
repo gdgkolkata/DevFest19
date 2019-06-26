@@ -7,11 +7,43 @@
     </div>
   </div>
 </div>
-<mat-divider></mat-divider>
-<div class="container filter">
-  <button mat-button color="primary">
-    filter <mat-icon>filter_list</mat-icon>
-  </button>
+<mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+<mat-divider *ngIf="!isLoading"></mat-divider>
+<div class="container filter-container">
+  <div class="filter-actions">
+    <span class="mat-subheading-2">
+      {{(filters$ | async).length ? '26 results' : ''}}
+    </span>
+    <span class="spacer"></span>
+    <button mat-button color="primary" *ngIf="(filters$ | async).length" (click)="clearAll()">
+      clear all
+    </button>
+    <button mat-button color="primary" (click)="toggleFilterPopup()">
+      filters
+      <mat-icon *ngIf="!isFilterPopup">filter_list</mat-icon>
+      <mat-icon *ngIf="isFilterPopup">clear</mat-icon>
+    </button>
+  </div>
+  <div class="filters">
+    <mat-chip-list aria-label="Applied filters">
+      <mat-chip *ngFor="let filter of filters$ | async; index as i"
+        removable="true" (removed)="onFilterToggle(filter.name)">
+        {{filter.name}}
+        <mat-icon matChipRemove>cancel</mat-icon>
+      </mat-chip>
+    </mat-chip-list>
+  </div>
+  <mat-card class="filter-popup mat-elevation-z8" *ngIf="isFilterPopup">
+    <div class="container">
+      <div class="mat-subheading-2">Tags</div>
+      <mat-chip-list aria-label="Available filters" multiple>
+        <mat-chip *ngFor="let filter of filters; index as i" #chip="matChip"
+          [selected]="filter.selected" (click)="onFilterToggle(filter.name)">
+          {{filter.name}}
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+  </mat-card>
 </div>
 <mat-divider></mat-divider>
 <div class="container pad-all speaker-container">

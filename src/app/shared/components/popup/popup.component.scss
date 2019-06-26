@@ -1,0 +1,32 @@
+.popup-container {
+  height: inherit;
+  max-width: 584px;
+  margin: auto;
+  padding: 24px;
+}
+
+.header {
+  background-color: rgb(247, 247, 247);
+  height: 160px;
+
+  .popup-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 96px auto;
+    column-gap: 20px;
+  }
+
+  .img-container {
+    $size: 96px;
+    height: $size;
+    width: $size;
+  }
+
+  .mat-headline {
+    margin: 0;
+  }
+}
+
+.links {
+  margin: 48px 0;
+}

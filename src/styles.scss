@@ -39,15 +39,6 @@ button, a[class*="-button"] {
   }
 }
 
-.top-nav-bar {
-  text-transform: uppercase;
-  border-bottom: none;
-  height: 100%;
-
-  .mat-tab-links, .mat-tab-link {
-    height: inherit;
-  }
-}
 .mat-chip.mat-standard-chip::after {
   background: transparent;
 }

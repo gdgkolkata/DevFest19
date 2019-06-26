@@ -8,7 +8,6 @@ import { Speaker } from '../interfaces/speaker';
   providedIn: 'root'
 })
 export class AppService {
-  private projectId: string;
   private endpoint: string;
 
   constructor(private http: HttpClient) {

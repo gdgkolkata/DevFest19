@@ -13,6 +13,10 @@
   background-position-y: center;
 }
 
+.no-logo {
+  background-image: none;
+}
+
 .site-name {
   height: 150px;
   width: 150px;
@@ -42,23 +46,13 @@
     align-items: center;
   }
 
+  .font-white {
+    color: #fff;
+  }
+
   .home-link {
     height: 100%;
     width: 100px;
-  }
-
-  .top-nav-bar {
-    text-transform: uppercase;
-    border-bottom: none;
-    height: 100%;
-
-    [mat-tab-link] {
-      min-width: 72px;
-    }
-  }
-
-  .buy-ticket {
-    margin-right: 8px;
   }
 }
 
@@ -71,7 +65,7 @@ mat-nav-list .router-link-active {
 }
 
 main {
-  padding-top: 64px;
+  padding-top: 56px;
 }
 
 @media (max-width: 960px) {
@@ -80,8 +74,8 @@ main {
   }
 }
 
-@media (max-width: 599px) {
+@media (min-width: 600px) {
   main {
-    padding-top: 56px;
+    padding-top: 64px;
   }
 }

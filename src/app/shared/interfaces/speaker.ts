@@ -4,6 +4,7 @@ export interface Speaker {
   lastName: string;
   fullName: string;
   bio: string;
+  bioTruncated?: string;
   tagLine: string;
   profilePicture: string;
   sessions: Session[];
