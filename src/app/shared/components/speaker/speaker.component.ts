@@ -18,9 +18,10 @@ export class SpeakerComponent implements OnInit {
 
   ngOnInit() {
     const limit = 100;
-    if (this.speaker.bio.length > limit) {
-      this.speaker.bio = `${this.speaker.bio.substr(0, limit).trim()}...`;
-    }
+    this.speaker.bioTruncated =
+      this.speaker.bio.length > limit
+        ? `${this.speaker.bio.substr(0, limit).trim()}...`
+        : this.speaker.bio;
   }
 
   loadImg() {
@@ -29,8 +30,7 @@ export class SpeakerComponent implements OnInit {
 
   openSpeakerDetailsPopup() {
     this.dialog.open(PopupComponent, {
-      // width: '250px'
-      // data: {name: this.name, animal: this.animal}
+      data: this.speaker
     });
   }
 }

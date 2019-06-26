@@ -93,16 +93,7 @@ import { MatTreeModule } from '@angular/material/tree';
     ScrollingModule
   ],
   providers: [
-    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 3000 } },
-    {
-      provide: MAT_DIALOG_DEFAULT_OPTIONS,
-      useValue: {
-        width: '720px',
-        hasBackdrop: true,
-        closeOnNavigation: true,
-        panelClass: 'popup-container'
-      }
-    }
+    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 3000 } }
   ]
 })
 export class MaterialModule {}

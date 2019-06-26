@@ -1,9 +1,24 @@
-<!-- <h2 mat-dialog-title>Delete all</h2>
-<mat-dialog-content>Are you sure?</mat-dialog-content>
-<mat-dialog-actions>
-  <button mat-button mat-dialog-close>No</button>
-  <button mat-button [mat-dialog-close]="true">Yes</button>
-</mat-dialog-actions> -->
-<div class="header mat-display-1">Adrian Kajda</div>
-<div>asdbasdb</div>
-<div>jhasdjhaf</div>
+<div class="header" mat-dialog-title>
+  <div class="popup-container">
+    <div class="img-container">
+      <app-round-img [img]="data.profilePicture"></app-round-img>
+    </div>
+    <span class="mat-headline">{{data.fullName}}</span>
+  </div>
+</div>
+<mat-dialog-content>
+  <div class="body">
+    <div class="popup-container">
+      <div class="mat-title">{{data.tagLine}}</div>
+      <div>{{data.bio}}</div>
+      <div class="links">
+        <span *ngFor="let link of data.links">{{link.title}} </span>
+      </div>
+      <div class="mat-title">Sessions</div>
+      <div *ngFor="let session of data.sessions">{{session.name}}</div>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>CLOSE</button>
+</mat-dialog-actions>
