@@ -8,7 +8,7 @@ import { fade } from '../../animations/animations';
   animations: [fade]
 })
 export class RoundImgComponent implements OnInit {
-  @Input() img: string;
+  @Input() src: string;
   showImg: boolean;
 
   constructor() { }
