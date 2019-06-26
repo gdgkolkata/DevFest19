@@ -24,7 +24,8 @@
 
 .sidenav-header {
   padding: 0 16px 30px;
-  .duration, .location {
+  .duration,
+  .location {
     margin-bottom: 0;
   }
   .location {
@@ -54,6 +55,13 @@
     height: 100%;
     width: 100px;
   }
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9;
 }
 
 [mat-list-item] {

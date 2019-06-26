@@ -51,6 +51,17 @@
 </div> -->
 <!-- <mat-divider></mat-divider> -->
 <!-- <div class="container pad-all speaker-container"> -->
-  <!-- <app-speaker *ngFor="let speaker of speakers$ | async"
+<!-- <app-speaker *ngFor="let speaker of speakers$ | async"
     [speaker]="speaker"></app-speaker> -->
 <!-- </div> -->
+<div class="slots">
+  <div class="slot" *ngFor="let slot of slots">
+    <div class="slot-time">{{ slot.slotStart }}</div>
+    <div class="slot-description">
+      <div class="session" *ngFor="let room of slot.rooms">
+        <div>{{ room.name }}</div>
+        <div>{{ room.session.title }}</div>
+      </div>
+    </div>
+  </div>
+</div>
