@@ -16,27 +16,21 @@
   <mat-sidenav-content cdkScrollable>
     <mat-toolbar class="topbar">
       <div class="container">
-        <button type="button" aria-label="Toggle sidenav"
-          mat-icon-button (click)="drawer.toggle()"
-          *ngIf="isBreakpoint$ | async">
-          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-        </button>
         <ng-container *ngIf="!(isBreakpoint$ | async); else iconButtons">
           <a routerLink="/" class="home-link"></a>
           <span class="spacer"></span>
-          <nav mat-tab-nav-bar disableRipple class="top-nav-bar">
-            <a mat-tab-link
-                *ngFor="let link of navLinks"
-                [routerLink]="link.path"
-                routerLinkActive #rla="routerLinkActive"
-                [active]="rla.isActive">
-              {{link.label}}
-            </a>
-            <a mat-tab-link>sign in</a>
-          </nav>
-          <a mat-flat-button color="primary" class="buy-ticket">buy ticket</a>
+          <a mat-flat-button [attr.aria-label]="link.label | titlecase"
+            *ngFor="let link of navLinks"
+            [routerLink]="link.path"
+            routerLinkActive="mat-primary">{{link.label}}</a>
+          <a mat-flat-button>sign in</a>
+          <a mat-flat-button>buy ticket</a>
         </ng-container>
         <ng-template #iconButtons>
+          <button mat-icon-button aria-label="Toggle sidenav"
+            (click)="drawer.toggle()">
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+          </button>
           <span class="spacer"></span>
           <button mat-icon-button aria-label="Sign In">
             <mat-icon>account_circle</mat-icon>

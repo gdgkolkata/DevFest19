@@ -46,20 +46,6 @@
     height: 100%;
     width: 100px;
   }
-
-  .top-nav-bar {
-    text-transform: uppercase;
-    border-bottom: none;
-    height: 100%;
-
-    [mat-tab-link] {
-      min-width: 72px;
-    }
-  }
-
-  .buy-ticket {
-    margin-right: 8px;
-  }
 }
 
 [mat-list-item] {

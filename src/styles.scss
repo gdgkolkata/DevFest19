@@ -38,13 +38,3 @@ button, a[class*="-button"] {
     line-height: 1.4;
   }
 }
-
-.top-nav-bar {
-  text-transform: uppercase;
-  border-bottom: none;
-  height: 100%;
-
-  .mat-tab-links, .mat-tab-link {
-    height: inherit;
-  }
-}
