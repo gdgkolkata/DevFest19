@@ -1,8 +1,9 @@
 import { Component, OnInit, AfterViewInit, Renderer2 } from '@angular/core';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { ScrollDispatcher, CdkScrollable } from '@angular/cdk/scrolling';
+import { Router, RouterEvent, NavigationEnd } from '@angular/router';
 import { Observable } from 'rxjs';
-import { map, distinctUntilChanged } from 'rxjs/operators';
+import { map, distinctUntilChanged, filter } from 'rxjs/operators';
 
 interface NavLink {
   label: string;
@@ -18,11 +19,13 @@ export class AppComponent implements OnInit, AfterViewInit {
   siteName: string;
   navLinks: NavLink[];
   isBreakpoint$: Observable<boolean>;
+  isHome: boolean;
 
   constructor(
     private breakpointObserver: BreakpointObserver,
     private scrollDispatcher: ScrollDispatcher,
-    private renderer: Renderer2
+    private renderer: Renderer2,
+    private router: Router
   ) {
     this.siteName = 'GDG Kolkata DevFest 2019';
     this.createRoutes();
@@ -38,6 +41,10 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
+    this.router.events.pipe(
+      filter((x: RouterEvent) => x instanceof NavigationEnd),
+      map(y => y.url === '/home')
+    ).subscribe(val => this.isHome = val);
     this.isBreakpoint$ = this.breakpointObserver
       .observe([Breakpoints.Small, Breakpoints.XSmall])
       .pipe(map(result => result.matches));

@@ -13,6 +13,10 @@
   background-position-y: center;
 }
 
+.no-logo {
+  background-image: none;
+}
+
 .site-name {
   height: 150px;
   width: 150px;
@@ -40,6 +44,10 @@
     height: inherit;
     display: flex;
     align-items: center;
+  }
+
+  .font-white {
+    color: #fff;
   }
 
   .home-link {

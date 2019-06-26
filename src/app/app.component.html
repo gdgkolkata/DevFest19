@@ -15,16 +15,16 @@
   </mat-sidenav>
   <mat-sidenav-content cdkScrollable>
     <mat-toolbar class="topbar">
-      <div class="container">
+      <div class="container" [class.font-white]="isHome">
         <ng-container *ngIf="!(isBreakpoint$ | async); else iconButtons">
-          <a routerLink="/" class="home-link"></a>
+          <a routerLink="/" class="home-link" [class.no-logo]="isHome"></a>
           <span class="spacer"></span>
-          <a mat-flat-button [attr.aria-label]="link.label | titlecase"
+          <a mat-button [attr.aria-label]="link.label | titlecase"
             *ngFor="let link of navLinks"
             [routerLink]="link.path"
-            routerLinkActive="mat-primary">{{link.label}}</a>
-          <a mat-flat-button>sign in</a>
-          <a mat-flat-button>buy ticket</a>
+            routerLinkActive="mat-flat-button mat-primary">{{link.label}}</a>
+          <!-- <a mat-button>sign in</a> -->
+          <a mat-button>buy ticket</a>
         </ng-container>
         <ng-template #iconButtons>
           <button mat-icon-button aria-label="Toggle sidenav"
@@ -32,9 +32,9 @@
             <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
           </button>
           <span class="spacer"></span>
-          <button mat-icon-button aria-label="Sign In">
+          <!-- <button mat-icon-button aria-label="Sign In">
             <mat-icon>account_circle</mat-icon>
-          </button>
+          </button> -->
         </ng-template>
         <button mat-icon-button aria-label="Notification">
           <mat-icon>notifications_none</mat-icon>
