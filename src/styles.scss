@@ -38,3 +38,7 @@ button, a[class*="-button"] {
     line-height: 1.4;
   }
 }
+
+.mat-chip.mat-standard-chip::after {
+  background: transparent;
+}
