@@ -6,9 +6,12 @@ import { DeferLoadDirective } from './directives/defer-load.directive';
 
 import { SpeakerComponent } from './components/speaker/speaker.component';
 import { FilterComponent } from './components/filter/filter.component';
+import { PopupComponent } from './components/popup/popup.component';
+import { RoundImgComponent } from './components/round-img/round-img.component';
 
 @NgModule({
-  declarations: [SpeakerComponent, DeferLoadDirective, FilterComponent],
+  declarations: [DeferLoadDirective, SpeakerComponent, FilterComponent, PopupComponent, RoundImgComponent],
+  entryComponents: [PopupComponent],
   imports: [CommonModule, MaterialModule],
   exports: [MaterialModule, SpeakerComponent, FilterComponent]
 })
