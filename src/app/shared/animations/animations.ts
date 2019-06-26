@@ -8,5 +8,5 @@ import {
 
 export const fade = trigger('fade', [
   state('void', style({ opacity: 0 })),
-  transition('* <=> *', animate(1000))
+  transition('* <=> *', animate(200))
 ]);
