@@ -48,3 +48,6 @@ button, a[class*="-button"] {
     height: inherit;
   }
 }
+.mat-chip.mat-standard-chip::after {
+  background: transparent;
+}
