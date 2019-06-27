@@ -6,7 +6,7 @@ import { DeferLoadDirective } from './directives/defer-load.directive';
 
 import { SpeakerComponent } from './components/speaker/speaker.component';
 import { FilterComponent } from './components/filter/filter.component';
-import { PopupComponent } from './components/popup/popup.component';
+import { SpeakerPopupComponent } from './components/speaker-popup/speaker-popup.component';
 import { RoundImgComponent } from './components/round-img/round-img.component';
 import { TeamMemberComponent } from './components/team-member/team-member.component';
 
@@ -15,11 +15,11 @@ import { TeamMemberComponent } from './components/team-member/team-member.compon
     DeferLoadDirective,
     SpeakerComponent,
     FilterComponent,
-    PopupComponent,
+    SpeakerPopupComponent,
     RoundImgComponent,
     TeamMemberComponent
   ],
-  entryComponents: [PopupComponent],
+  entryComponents: [SpeakerPopupComponent],
   imports: [CommonModule, MaterialModule],
   exports: [
     MaterialModule,
