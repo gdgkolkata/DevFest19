@@ -27,6 +27,10 @@
   }
 }
 
+mat-dialog-content {
+  max-height: 50vh;
+}
+
 .body {
   .popup-container {
     display: grid;
