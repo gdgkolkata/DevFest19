@@ -9,7 +9,8 @@ export interface Schedule {
 export interface Room {
   id: string;
   name: string;
-  sessions: Session[];
+  sessions?: Session[];
+  session?: Session;
   hasOnlyPlenumSessions?: boolean;
   index?: number;
 }
