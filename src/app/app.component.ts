@@ -1,7 +1,7 @@
 import { Component, OnInit, AfterViewInit, Renderer2 } from '@angular/core';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { ScrollDispatcher, CdkScrollable } from '@angular/cdk/scrolling';
-import { Router, RouterEvent, NavigationEnd } from '@angular/router';
+import { Router, RouterEvent, NavigationEnd, NavigationStart } from '@angular/router';
 import { Observable } from 'rxjs';
 import { map, distinctUntilChanged, filter } from 'rxjs/operators';
 
@@ -20,6 +20,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   navLinks: NavLink[];
   isBreakpoint$: Observable<boolean>;
   isHome: boolean;
+  isNavigating: boolean;
 
   constructor(
     private breakpointObserver: BreakpointObserver,
@@ -41,10 +42,19 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-    this.router.events.pipe(
-      filter((x: RouterEvent) => x instanceof NavigationEnd),
-      map(y => y.url === '/home')
-    ).subscribe(val => this.isHome = val);
+    this.router.events.subscribe((routerEvent: RouterEvent) => {
+      if (routerEvent instanceof NavigationStart) {
+        this.isNavigating = true;
+      } else if (routerEvent instanceof NavigationEnd) {
+        this.isNavigating = false;
+      }
+    });
+    this.router.events
+      .pipe(
+        filter((x: RouterEvent) => x instanceof NavigationEnd),
+        map(y => y.url === '/home')
+      )
+      .subscribe(val => (this.isHome = val));
     this.isBreakpoint$ = this.breakpointObserver
       .observe([Breakpoints.Small, Breakpoints.XSmall])
       .pipe(map(result => result.matches));
@@ -61,8 +71,7 @@ export class AppComponent implements OnInit, AfterViewInit {
             const value = (offsetTop * propFinalValue) / completionPixel;
             return value > propFinalValue ? propFinalValue : value;
           }
-          const background =
-            `background: rgba(255,255,255,${calculateProperty(1)})`;
+          const background = `background: rgba(255,255,255,${calculateProperty(1)})`;
           const boxShadow =
             'box-shadow: ' +
             `0 2px 04px -1px rgba(0,0,0,${calculateProperty(0.2)}), ` +
@@ -75,8 +84,6 @@ export class AppComponent implements OnInit, AfterViewInit {
         }),
         distinctUntilChanged((x, y) => x.style === y.style)
       )
-      .subscribe(({ style, topBar }) =>
-        this.renderer.setAttribute(topBar, 'style', style)
-      );
+      .subscribe(({ style, topBar }) => this.renderer.setAttribute(topBar, 'style', style));
   }
 }
