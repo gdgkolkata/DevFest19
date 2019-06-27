@@ -1,6 +1,6 @@
-<mat-progress-bar *ngIf="isNavigating" mode="indeterminate" class="progress-bar"></mat-progress-bar>
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport role="dialog" mode="over" (click)="drawer.close()">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+    role="dialog" mode="over" (click)="drawer.close()">
     <div class="site-name home-link"></div>
     <div class="sidenav-header">
       <div class="duration mat-headline">August 03, 2019</div>
@@ -8,9 +8,9 @@
     </div>
     <mat-divider></mat-divider>
     <mat-nav-list>
-      <a mat-list-item *ngFor="let link of navLinks" routerLinkActive="router-link-active" [routerLink]="link.path">{{
-        link.label
-      }}</a>
+      <a mat-list-item *ngFor="let link of navLinks"
+        routerLinkActive="router-link-active"
+        [routerLink]="link.path">{{link.label}}</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content cdkScrollable>
@@ -19,19 +19,16 @@
         <ng-container *ngIf="!(isBreakpoint$ | async); else iconButtons">
           <a routerLink="/" class="home-link" [class.no-logo]="isHome"></a>
           <span class="spacer"></span>
-          <a
-            mat-button
-            [attr.aria-label]="link.label | titlecase"
+          <a mat-button [attr.aria-label]="link.label | titlecase"
             *ngFor="let link of navLinks"
             [routerLink]="link.path"
-            routerLinkActive="mat-flat-button mat-primary"
-            >{{ link.label }}</a
-          >
+            routerLinkActive="mat-flat-button mat-primary">{{link.label}}</a>
           <!-- <a mat-button>sign in</a> -->
           <a mat-button>buy ticket</a>
         </ng-container>
         <ng-template #iconButtons>
-          <button mat-icon-button aria-label="Toggle sidenav" (click)="drawer.toggle()">
+          <button mat-icon-button aria-label="Toggle sidenav"
+            (click)="drawer.toggle()">
             <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
           </button>
           <span class="spacer"></span>

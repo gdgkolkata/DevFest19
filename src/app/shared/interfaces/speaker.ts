@@ -7,15 +7,11 @@ export interface Speaker {
   bioTruncated?: string;
   tagLine: string;
   profilePicture: string;
-  sessions: SessionRef[];
+  sessions: Session[];
   isTopSpeaker: boolean;
   links: Link[];
   questionAnswers: any[];
   categories: any[];
-}
-export interface SpeakerRef {
-  id: string;
-  name: string;
 }
 
 export interface Link {
@@ -25,33 +21,6 @@ export interface Link {
 }
 
 export interface Session {
-  id: string;
-  name?: string;
-  title?: string;
-  description?: string;
-  startsAt?: string;
-  endsAt?: string;
-  isServiceSession?: boolean;
-  isPlenumSession?: boolean;
-  speakers?: SpeakerRef[];
-  categories?: Category[];
-  roomId?: string;
-  room?: string;
-}
-
-export interface SessionRef {
-  id: string;
-  name: string;
-}
-
-export interface Category {
-  id: string;
-  name: string;
-  categoryItems: CategoryItem[];
-  sort: number;
-}
-
-export interface CategoryItem {
-  id: string;
+  id: number;
   name: string;
 }
