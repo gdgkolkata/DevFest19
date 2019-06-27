@@ -22,7 +22,7 @@ import { BlogComponent } from './core/blog/blog.component';
     BlogComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
