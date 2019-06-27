@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { finalize } from 'rxjs/operators';
+import { AppService } from 'src/app/shared/services/app.service';
+import { Schedule } from 'src/app/shared/interfaces/schedule';
 
 @Component({
   selector: 'app-schedule',
@@ -6,12 +10,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./schedule.component.scss']
 })
 export class ScheduleComponent implements OnInit {
-  programDate = '2019-09-01';
-  constructor() {}
+  schedule$: Observable<Schedule[]>;
+  isLoading: boolean;
 
-  ngOnInit() {}
+  constructor(private appService: AppService) {}
 
-  onFiltersUpdated(filters: { tags: string[]; complexities: string[] }) {
-    console.log(filters);
+  ngOnInit() {
+    this.isLoading = true;
+    this.schedule$ = this.appService
+      .getSchedule()
+      .pipe(finalize(() => (this.isLoading = false)));
   }
 }

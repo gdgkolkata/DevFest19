@@ -19,7 +19,7 @@ export class SpeakerComponent implements OnInit {
   ngOnInit() {
     const limit = 100;
     this.speaker.bioTruncated =
-      this.speaker.bio.length > limit
+      this.speaker.bio && this.speaker.bio.length > limit
         ? `${this.speaker.bio.substr(0, limit).trim()}...`
         : this.speaker.bio;
   }
