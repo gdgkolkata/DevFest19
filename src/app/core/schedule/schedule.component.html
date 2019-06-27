@@ -1,67 +1,11 @@
-<!-- <div class="container">
-  <div class="header">
-    <div class="mat-display-2">Schedule</div>
-    // <div class="">Date: {{ programDate }}</div>
-  </div>
-</div>
-<mat-divider></mat-divider>
-<app-filter (filters)="onFiltersUpdated($event)"></app-filter> -->
 <div class="container">
   <div class="top-gap">
     <div class="mat-display-2">Schedule</div>
   </div>
 </div>
-<!-- <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar> -->
-<!-- <mat-divider *ngIf="!isLoading"></mat-divider> -->
-<!-- <div class="container filter-container">
-  <div class="filter-actions">
-    <span class="mat-subheading-2">
-      {{(filters$ | async).length ? '26 results' : ''}}
-    </span>
-    <span class="spacer"></span>
-    <button mat-button color="primary" *ngIf="(filters$ | async).length" (click)="clearAll()">
-      clear all
-    </button>
-    <button mat-button color="primary" (click)="toggleFilterPopup()">
-      filters
-      <mat-icon *ngIf="!isFilterPopup">filter_list</mat-icon>
-      <mat-icon *ngIf="isFilterPopup">clear</mat-icon>
-    </button>
-  </div>
-  <div class="filters">
-    <mat-chip-list aria-label="Applied filters">
-      <mat-chip *ngFor="let filter of filters$ | async; index as i"
-        removable="true" (removed)="onFilterToggle(filter.name)">
-        {{filter.name}}
-        <mat-icon matChipRemove>cancel</mat-icon>
-      </mat-chip>
-    </mat-chip-list>
-  </div>
-  <mat-card class="filter-popup mat-elevation-z8" *ngIf="isFilterPopup">
-    <div class="container">
-      <div class="mat-subheading-2">Tags</div>
-      <mat-chip-list aria-label="Available filters" multiple>
-        <mat-chip *ngFor="let filter of filters; index as i" #chip="matChip"
-          [selected]="filter.selected" (click)="onFilterToggle(filter.name)">
-          {{filter.name}}
-        </mat-chip>
-      </mat-chip-list>
-    </div>
-  </mat-card>
-</div> -->
-<!-- <mat-divider></mat-divider> -->
-<!-- <div class="container pad-all speaker-container"> -->
-<!-- <app-speaker *ngFor="let speaker of speakers$ | async"
-    [speaker]="speaker"></app-speaker> -->
-<!-- </div> -->
-<div class="slots">
-  <div class="slot" *ngFor="let slot of slots">
-    <div class="slot-time">{{ slot.slotStart }}</div>
-    <div class="slot-description">
-      <div class="session" *ngFor="let room of slot.rooms">
-        <div>{{ room.name }}</div>
-        <div>{{ room.session.title }}</div>
-      </div>
-    </div>
-  </div>
-</div>
+<mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+<app-filter></app-filter>
+<ng-container *ngFor="let schedule of schedule$ | async">
+  <app-time-slot *ngFor="let timeSlot of schedule.timeSlots"
+    [timeSlot]="timeSlot"></app-time-slot>
+</ng-container>

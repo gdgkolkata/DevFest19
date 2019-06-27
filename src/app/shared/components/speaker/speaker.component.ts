@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { PopupComponent } from '../popup/popup.component';
+import { SpeakerPopupComponent } from '../speaker-popup/speaker-popup.component';
 import { Speaker } from '../../interfaces/speaker';
 import { fade } from '../../animations/animations';
 
@@ -19,7 +19,7 @@ export class SpeakerComponent implements OnInit {
   ngOnInit() {
     const limit = 100;
     this.speaker.bioTruncated =
-      this.speaker.bio.length > limit
+      this.speaker.bio && this.speaker.bio.length > limit
         ? `${this.speaker.bio.substr(0, limit).trim()}...`
         : this.speaker.bio;
   }
@@ -29,7 +29,7 @@ export class SpeakerComponent implements OnInit {
   }
 
   openSpeakerDetailsPopup() {
-    this.dialog.open(PopupComponent, {
+    this.dialog.open(SpeakerPopupComponent, {
       data: this.speaker
     });
   }

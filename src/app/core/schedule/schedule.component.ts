@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Schedule, TimeSlot } from 'src/app/shared/interfaces/schedule';
+import { Observable } from 'rxjs';
+import { finalize } from 'rxjs/operators';
+import { AppService } from 'src/app/shared/services/app.service';
+import { Schedule } from 'src/app/shared/interfaces/schedule';
 
 @Component({
   selector: 'app-schedule',
@@ -8,21 +10,15 @@ import { Schedule, TimeSlot } from 'src/app/shared/interfaces/schedule';
   styleUrls: ['./schedule.component.scss']
 })
 export class ScheduleComponent implements OnInit {
-  programDate = '2019-09-01';
-  slots: TimeSlot[] = [];
-  constructor(private route: ActivatedRoute) {}
+  schedule$: Observable<Schedule[]>;
+  isLoading: boolean;
+
+  constructor(private appService: AppService) {}
 
   ngOnInit() {
-    this.route.data.subscribe((schedules: { schedule: Schedule[] }) => {
-      console.log(schedules);
-      this.slots = schedules.schedule[0].timeSlots.map(item => ({
-        ...item,
-        slotStart: item.slotStart.substring(0, item.slotStart.length - 3)
-      }));
-    });
-  }
-
-  onFiltersUpdated(filters: { tags: string[]; complexities: string[] }) {
-    console.log(filters);
+    this.isLoading = true;
+    this.schedule$ = this.appService
+      .getSchedule()
+      .pipe(finalize(() => (this.isLoading = false)));
   }
 }
