@@ -1,0 +1,24 @@
+<div class="container time">
+  <span class="start-hour">{{timeSlot.slotStart | slice:0:2}}</span>
+  <span class="start-min">{{timeSlot.slotStart | slice:3:5}}</span>
+</div>
+<mat-divider></mat-divider>
+<ng-container *ngFor="let timeSlotRoom of timeSlot.rooms">
+  <div class="container session" matRipple
+    *ngIf="timeSlotRoom.session as session">
+    <div class="name">
+      <div class="mat-title">{{session.title}}</div>
+      <div class="mat-subheading-1">{{session.descriptionTruncated}}</div>
+    </div>
+    <div class="grid-spacer"></div>
+    <div class="details">
+      <div class="mat-small">
+        {{session.startsAt | timeDiff:session.endsAt}}
+      </div>
+      <div class="mat-subheading-1" *ngFor="let speaker of session.speakers">
+        {{speaker.name}}
+      </div>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+</ng-container>

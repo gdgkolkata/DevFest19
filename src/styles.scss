@@ -39,6 +39,11 @@ button, a[class*="-button"] {
   }
 }
 
-.mat-chip.mat-standard-chip::after {
-  background: transparent;
+.link {
+  color: #673ab7;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

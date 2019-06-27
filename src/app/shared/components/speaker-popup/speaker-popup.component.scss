@@ -27,6 +27,20 @@
   }
 }
 
+mat-dialog-content {
+  max-height: 50vh;
+}
+
+.body {
+  .popup-container {
+    display: grid;
+    row-gap: 48px;
+  }
+}
+
 .links {
-  margin: 48px 0;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  column-gap: 15px;
 }

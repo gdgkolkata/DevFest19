@@ -1,0 +1,35 @@
+.time {
+  font-weight: 300;
+  $pad: 10px;
+  padding-top: $pad;
+  padding-bottom: $pad;
+  margin-top: 16px;
+
+  .start-hour {
+    font-size: 24px;
+  }
+
+  .start-min {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+}
+
+.session {
+  min-height: 162px;
+  $pad: 16px;
+  padding-top: $pad;
+  padding-bottom: $pad;
+  display: grid;
+  grid-template-rows: max-content minmax(40px, auto) max-content;
+  cursor: pointer;
+
+  .mat-title,.mat-subheading-1 {
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .mat-subheading-1 {
+    margin-top: 5px;
+  }
+}
