@@ -1,5 +1,10 @@
+.mat-tab-nav-bar {
+  border-bottom: none;
+}
+
 .time-slot-container {
   display: grid;
+  row-gap: 16px;
 }
 
 @media (max-width: 640px) {

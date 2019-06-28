@@ -8,7 +8,11 @@
     <div class="popup-container">
       <div class="description">
         <div class="mat-subheading-2">
-          <div>{{data.startsAt | date}}</div>
+          <div>
+            <span>{{data.startsAt | date:'MMMM d'}}</span>,
+            <span>{{data.startsAt | date:'HH:mm'}}</span> -
+            <span>{{data.endsAt | date:'HH:mm'}}</span>
+          </div>
           <div>{{data.room}}</div>
         </div>
         <div>{{data.description}}</div>
