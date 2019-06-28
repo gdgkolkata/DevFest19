@@ -43,7 +43,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.router.events.pipe(
       filter((x: RouterEvent) => x instanceof NavigationEnd),
-      map(y => y.url === '/home')
+      map((y: NavigationEnd) => y.urlAfterRedirects === '/home')
     ).subscribe(val => this.isHome = val);
     this.isBreakpoint$ = this.breakpointObserver
       .observe([Breakpoints.Small, Breakpoints.XSmall])
