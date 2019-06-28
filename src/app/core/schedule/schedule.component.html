@@ -3,8 +3,8 @@
     <div class="mat-display-2">Schedule</div>
   </div>
 </div>
-<nav mat-tab-nav-bar *ngIf="schedules.length">
-  <a mat-tab-link active="true">
+<nav mat-tab-nav-bar>
+  <a mat-tab-link active="true" *ngIf="schedules.length">
     {{schedules[0].date | date:'MMMM d'}}
   </a>
 </nav>

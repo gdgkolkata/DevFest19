@@ -1,5 +1,12 @@
-.mat-tab-nav-bar {
+$navBar: 48px;
+
+.top-gap {
+  height: calc(230px - #{$navBar});
+}
+
+[mat-tab-nav-bar] {
   border-bottom: none;
+  height: $navBar;
 }
 
 .time-slot-container {
