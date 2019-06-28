@@ -1,0 +1,30 @@
+.time-slot-container {
+  display: grid;
+}
+
+@media (max-width: 640px) {
+  .time-slot-container {
+    max-width: unset;
+    margin: unset;
+    padding: unset;
+  }
+}
+
+@mixin gap($gap) {
+  row-gap: $gap;
+  padding-top: $gap;
+  padding-bottom: $gap;
+}
+
+@media (min-width: 641px) {
+  .time-slot-container {
+    @include gap(16px);
+  }
+}
+
+@media (min-width: 812px) {
+  .time-slot-container {
+    display: grid;
+    @include gap(32px);
+  }
+}
