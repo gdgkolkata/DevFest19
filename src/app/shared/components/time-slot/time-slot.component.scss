@@ -23,18 +23,17 @@ $border: 1px solid rgba(0,0,0,.12);
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: max-content minmax(40px, auto) max-content;
+  grid-template-rows: max-content minmax(50px, auto) max-content;
   cursor: pointer;
   border-top: $border;
   border-bottom: $border;
 
-  .mat-title,.mat-subheading-1 {
-    margin: 0;
+  .mat-title, .mat-subheading-1 {
     line-height: 1.2;
   }
 
   .mat-subheading-1 {
-    margin-top: 5px;
+    margin: 0;
   }
 }
 

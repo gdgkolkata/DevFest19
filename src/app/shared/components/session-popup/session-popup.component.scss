@@ -13,14 +13,6 @@
   .popup-container {
     display: grid;
     align-items: center;
-    grid-template-columns: 96px auto;
-    column-gap: 20px;
-  }
-
-  .img-container {
-    $size: 96px;
-    height: $size;
-    width: $size;
   }
 
   .mat-headline {
@@ -35,13 +27,12 @@ mat-dialog-content {
 .body {
   .popup-container {
     display: grid;
-    row-gap: 32px;
-  }
-}
+    row-gap: 48px;
 
-.links {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: start;
-  column-gap: 15px;
+    .speaker {
+      .mat-subheading-2 {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

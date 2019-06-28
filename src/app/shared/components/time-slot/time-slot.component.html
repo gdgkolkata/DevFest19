@@ -6,10 +6,10 @@
   <div class="session-container">
     <ng-container *ngFor="let timeSlotRoom of timeSlot.rooms">
       <div class="container session" matRipple
-        *ngIf="timeSlotRoom.session as session">
+        *ngIf="timeSlotRoom.session as session" (click)="openTimeSlotPopup(session)">
         <div class="name">
           <div class="mat-title">{{session.title}}</div>
-          <div class="mat-subheading-1">{{session.descriptionTruncated}}</div>
+          <div>{{session.descriptionTruncated}}</div>
         </div>
         <div class="grid-spacer"></div>
         <div class="details">

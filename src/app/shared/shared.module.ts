@@ -8,10 +8,12 @@ import { TimeDiffPipe } from './pipes/time-diff.pipe';
 
 import { SpeakerComponent } from './components/speaker/speaker.component';
 import { FilterComponent } from './components/filter/filter.component';
-import { SpeakerPopupComponent } from './components/speaker-popup/speaker-popup.component';
 import { RoundImgComponent } from './components/round-img/round-img.component';
 import { TeamMemberComponent } from './components/team-member/team-member.component';
 import { TimeSlotComponent } from './components/time-slot/time-slot.component';
+
+import { SpeakerPopupComponent } from './components/speaker-popup/speaker-popup.component';
+import { SessionPopupComponent } from './components/session-popup/session-popup.component';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,10 @@ import { TimeSlotComponent } from './components/time-slot/time-slot.component';
     SpeakerPopupComponent,
     RoundImgComponent,
     TeamMemberComponent,
-    TimeSlotComponent
+    TimeSlotComponent,
+    SessionPopupComponent
   ],
-  entryComponents: [SpeakerPopupComponent],
+  entryComponents: [SpeakerPopupComponent, SessionPopupComponent],
   imports: [CommonModule, MaterialModule],
   exports: [
     MaterialModule,

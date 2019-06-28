@@ -10,7 +10,7 @@
   <div class="body">
     <div class="popup-container">
       <div class="bio">
-        <div class="mat-title">{{data.tagLine}}</div>
+        <div class="mat-subheading-2">{{data.tagLine}}</div>
         <div>{{data.bio}}</div>
       </div>
       <div class="links" *ngIf="data.links.length">
@@ -19,7 +19,7 @@
           {{link.title}}</a>
       </div>
       <div class="sessions">
-        <div class="mat-title">Sessions</div>
+        <div class="mat-subheading-2">Sessions</div>
         <div *ngFor="let session of data.sessions">{{session.name}}</div>
       </div>
     </div>
