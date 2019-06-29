@@ -39,8 +39,7 @@
   z-index: 4;
   background: rgba(255, 255, 255, 0);
   padding: 0;
-  transition: background, color, box-shadow;
-  transition-duration: 0.2s;
+  transition: all 0.2s;
 
   .container {
     width: 100%;
@@ -52,8 +51,7 @@
   .home-link {
     height: 100%;
     width: 100px;
-    transition: opacity;
-    transition-duration: 0.2s;
+    transition: all 0.2s;
   }
 }
 
