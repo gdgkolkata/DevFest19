@@ -11,6 +11,7 @@ import { SpeakersComponent } from './core/speakers/speakers.component';
 import { ScheduleComponent } from './core/schedule/schedule.component';
 import { TeamComponent } from './core/team/team.component';
 import { BlogComponent } from './core/blog/blog.component';
+import { FooterComponent } from './core/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BlogComponent } from './core/blog/blog.component';
     SpeakersComponent,
     ScheduleComponent,
     TeamComponent,
-    BlogComponent
+    BlogComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ $primary: #673ab7;
 .master-container {
   display: grid;
   row-gap: 64px;
+  margin-bottom: 64px;
 }
 
 [class*="mat-display-"],
@@ -119,6 +120,17 @@ $primary: #673ab7;
       display: grid;
       gap: 24px;
     }
+  }
+}
+
+.banner-block {
+  background-color: $primary;
+  color: #fff;
+  text-align: center;
+  padding: 32px 0;
+
+  .mat-display-1 {
+    margin-bottom: 32px;
   }
 }
 

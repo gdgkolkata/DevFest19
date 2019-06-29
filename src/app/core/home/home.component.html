@@ -76,10 +76,6 @@
       <div class="small-grid">
         <div class="mat-display-1">Rockstar speakers</div>
         <div class="speaker-container">
-          <div *ngFor="let speaker of [1,2,3,4]">
-            GDG DevFest India brings together the world class experts in Android, Web and
-            Cloud technologies to Kolkata for 2 days of sessions, workshops and showcases.
-          </div>
         </div>
         <button mat-button color="primary">
           view all speakers <mat-icon>arrow_right</mat-icon>
@@ -87,7 +83,14 @@
       </div>
     </div>
   </section>
-  <section class="block">Get notified about the important conference updates</section>
+  <section class="block banner-block">
+    <div class="container pad-all">
+      <div class="mat-display-1">Get notified about the important conference updates</div>
+      <button mat-button>
+        subscribe <mat-icon>arrow_right</mat-icon>
+      </button>
+    </div>
+  </section>
   <section class="block">
     <div class="container">
       Tickets
