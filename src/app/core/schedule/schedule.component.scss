@@ -1,7 +1,7 @@
 $navBar: 48px;
 
 .top-gap {
-  height: calc(230px - #{$navBar});
+  height: calc(200px - #{$navBar});
 }
 
 [mat-tab-nav-bar] {

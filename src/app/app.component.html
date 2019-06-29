@@ -14,10 +14,11 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content cdkScrollable>
-    <mat-toolbar class="topbar">
-      <div class="container" [class.font-white]="isHome">
+    <mat-toolbar #topBar
+      class="topbar">
+      <div class="container">
         <ng-container *ngIf="!(isBreakpoint$ | async); else iconButtons">
-          <a routerLink="/" class="home-link" [class.no-logo]="isHome"></a>
+          <a routerLink="/" class="home-link" #homeLink [class.no-logo]="isHomeLinkHidden"></a>
           <span class="spacer"></span>
           <a mat-button [attr.aria-label]="link.label | titlecase"
             *ngFor="let link of navLinks"
