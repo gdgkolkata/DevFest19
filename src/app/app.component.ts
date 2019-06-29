@@ -110,8 +110,7 @@ export class AppComponent implements OnInit, AfterViewInit {
       )
       .subscribe(({isHomeLinkHidden, style}) => {
         if (this.isHome) {
-          this.isHomeLinkHidden = isHomeLinkHidden;
-          if (this.isHomeLinkHidden) {
+          if (isHomeLinkHidden) {
             this.renderer.addClass(this.homeLink, 'no-logo');
           } else {
             this.renderer.removeClass(this.homeLink, 'no-logo');

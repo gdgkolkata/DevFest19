@@ -1,13 +1,118 @@
-<section class="hero-block">
-  <div class="hero-img"></div>
-  <div class="hero-content">asdasd</div>
-</section>
-<section class="about">What you need to know, before you ask.</section>
-<section class="about">Rockstar speakers</section>
-<section class="about">Get notified about the important conference updates</section>
-<section class="about">Tickets</section>
-<section class="about">Highlights</section>
-<section class="about">DFUA'16 featured videos</section>
-<section class="about">The latest news</section>
-<section class="about">Location</section>
-<section class="about">Partners</section>
+<div class="master-container">
+  <section class="hero-block">
+    <div class="hero-img"></div>
+    <div class="hero-content" #heroContent>
+      <div class="container">
+        <div class="logo mat-display-2">
+          <div>GDG DevFest</div>
+          <div>Season 2019</div>
+        </div>
+        <div class="tagline mat-headline">
+          <div>Kolkata. October 12-13, 2019</div>
+          <div>Be a hero</div>
+        </div>
+        <div class="actions">
+          <button mat-button>
+            <mat-icon>movie</mat-icon>
+            view highlights
+          </button>
+          <button mat-flat-button class="primary-text">
+            <mat-icon>local_activity</mat-icon>
+            buy ticket
+          </button>
+        </div>
+        <button mat-icon-button class="scroll-down"
+          aria-label="Scroll down">
+          <mat-icon>expand_more</mat-icon>
+        </button>
+      </div>
+      </div>
+  </section>
+  <section class="block about-block" #about>
+    <div class="container">
+      <div class="small-grid">
+        <div class="mat-display-1">What you need to know, before you ask.</div>
+        <div>
+          GDG DevFest India brings together the world class experts in Android, Web and
+          Cloud technologies to Kolkata for 2 days of sessions, workshops and showcases.
+        </div>
+        <button mat-button color="primary">
+          explore featured session <mat-icon>arrow_right</mat-icon>
+        </button>
+        <div>
+          Described by many as 'Google I/O of India', our team creates DevFest to be the best
+          place for experience sharing in a phenomenal atmosphere.
+        </div>
+        <button mat-button color="primary">
+          see how it was in 2018 <mat-icon>arrow_right</mat-icon>
+        </button>
+      </div>
+      <div class="stats">
+        <div>
+          <div class="number mat-display-3">900</div>
+          <mat-divider></mat-divider>
+          <div class="text">attendees</div>
+        </div>
+        <div>
+          <div class="number mat-display-3">2</div>
+          <mat-divider></mat-divider>
+          <div class="text">days</div>
+        </div>
+        <div>
+          <div class="number mat-display-3">50</div>
+          <mat-divider></mat-divider>
+          <div class="text">sessions</div>
+        </div>
+        <div>
+          <div class="number mat-display-3">4</div>
+          <mat-divider></mat-divider>
+          <div class="text">tracks</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="block speaker-block">
+    <div class="container">
+      <div class="small-grid">
+        <div class="mat-display-1">Rockstar speakers</div>
+        <div class="speaker-container">
+          <div *ngFor="let speaker of [1,2,3,4]">
+            GDG DevFest India brings together the world class experts in Android, Web and
+            Cloud technologies to Kolkata for 2 days of sessions, workshops and showcases.
+          </div>
+        </div>
+        <button mat-button color="primary">
+          view all speakers <mat-icon>arrow_right</mat-icon>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="block">Get notified about the important conference updates</section>
+  <section class="block">
+    <div class="container">
+      Tickets
+    </div>
+  </section>
+  <section class="block">Highlights</section>
+  <section class="block">
+    <div class="container">
+      Organizer
+    </div>
+  </section>
+  <section class="block">
+    <div class="container">
+      DFUA'16 featured videos
+    </div>
+  </section>
+  <section class="block">
+    <div class="container">
+      The latest news
+    </div>
+  </section>
+  <section class="block">Location</section>
+  <section class="block">
+    <div class="container">
+      Partners
+    </div>
+  </section>
+</div>
