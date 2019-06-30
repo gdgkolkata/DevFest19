@@ -1,0 +1,17 @@
+mat-card {
+  text-align: center;
+  padding: 32px;
+  cursor: pointer;
+  height: 100%;
+}
+
+.img-container {
+  $size: 128px;
+  height: $size;
+  width: $size;
+  margin: auto;
+}
+
+.description {
+  margin-top: 16px;
+}

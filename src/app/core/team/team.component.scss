@@ -1,0 +1,38 @@
+.top-gap {
+  height: unset;
+
+  .mat-display-2 {
+    margin-bottom: 0;
+  }
+}
+
+.description {
+  background-color: rgb(245, 245, 245);
+  margin-top: 80px;
+
+  .container {
+    $pad: 48px;
+    padding-top: $pad;
+    padding-bottom: $pad;
+    display: grid;
+    row-gap: 30px;
+  }
+}
+
+.team-container {
+  .mat-display-1 {
+    &:first-child{
+      margin: 24px 0 32px;
+    }
+
+    &:not(:first-child){
+      margin: 64px 0 32px;
+    }
+  }
+
+  .team {
+    display: grid;
+    row-gap: 48px;
+  }
+}
+

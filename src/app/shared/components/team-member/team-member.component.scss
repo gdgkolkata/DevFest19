@@ -1,0 +1,25 @@
+$img-size: 96px;
+
+.team-member-container {
+  display: grid;
+  grid-template-columns: $img-size auto;
+  column-gap: 24px;
+}
+
+.img-container {
+  height: $img-size;
+  width: $img-size;
+}
+
+.details {
+  padding-top: 4px;
+
+  .mat-title {
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+.links {
+  margin-top: 10px;
+}
