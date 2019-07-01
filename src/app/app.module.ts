@@ -12,6 +12,8 @@ import { ScheduleComponent } from './core/schedule/schedule.component';
 import { TeamComponent } from './core/team/team.component';
 import { BlogComponent } from './core/blog/blog.component';
 import { FooterComponent } from './core/footer/footer.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { FooterComponent } from './core/footer/footer.component';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
