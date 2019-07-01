@@ -7,6 +7,6 @@ enableProdMode();
 async function bootstrap() {
   const app = await NestFactory.create(ApplicationModule);
   app.setGlobalPrefix('api');
-  await app.listen(4000);
+  await app.listen(process.env.PORT || 4000);
 }
 bootstrap();
