@@ -1,0 +1,43 @@
+%padding {
+  $pad: 16px;
+  padding-top: $pad;
+  padding-bottom: $pad;
+}
+
+.filter-container {
+  position: relative;
+}
+
+.filter-bar {
+  @extend %padding;
+}
+
+.filter-actions {
+  display: flex;
+  align-items: center;
+
+  .mat-subheading-2 {
+    margin: 0;
+  }
+}
+
+.filters {
+  margin-top: 4px;
+}
+
+.filter-popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 0;
+
+  .mat-subheading-2 {
+    margin-bottom: 10px;
+  }
+
+  .container {
+    @extend %padding;
+  }
+}

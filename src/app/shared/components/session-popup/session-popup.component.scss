@@ -1,0 +1,38 @@
+.popup-container {
+  height: inherit;
+  max-width: 584px;
+  margin: auto;
+  padding: 24px;
+}
+
+.header {
+  background-color: rgb(247, 247, 247);
+  height: 160px;
+  margin: 0;
+
+  .popup-container {
+    display: grid;
+    align-items: center;
+  }
+
+  .mat-headline {
+    margin: 0;
+  }
+}
+
+mat-dialog-content {
+  max-height: 50vh;
+}
+
+.body {
+  .popup-container {
+    display: grid;
+    row-gap: 48px;
+
+    .speaker {
+      .mat-subheading-2 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
