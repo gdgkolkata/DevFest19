@@ -1,7 +1,9 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport
     role="dialog" mode="over" (click)="drawer.close()">
-    <div class="site-name home-link"></div>
+    <div class="site-name home-link">
+      <img class="h-100" src="assets/img/logo_short.png"/>
+    </div>
     <div class="sidenav-header">
       <div class="duration mat-headline">August 03, 2019</div>
       <div class="location mat-subheading-1">Kolkata, India</div>
@@ -18,7 +20,10 @@
       class="topbar">
       <div class="container">
         <ng-container *ngIf="!(isBreakpoint$ | async); else iconButtons">
-          <a routerLink="/" class="home-link" #homeLink [class.no-logo]="isHomeLinkHidden"></a>
+          <!-- <a routerLink="/" class="home-link" #homeLink [class.no-logo]="isHomeLinkHidden"></a> -->
+          <a routerLink="/" class="home-link">
+            <img class="h-100" src="assets/img/logo.png"/>
+          </a>
           <span class="spacer"></span>
           <a mat-button [attr.aria-label]="link.label | titlecase"
             *ngFor="let link of navLinks"
@@ -32,14 +37,14 @@
             (click)="drawer.toggle()">
             <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
           </button>
-          <span class="spacer"></span>
+          <!-- <span class="spacer"></span> -->
           <!-- <button mat-icon-button aria-label="Sign In">
             <mat-icon>account_circle</mat-icon>
           </button> -->
         </ng-template>
-        <button mat-icon-button aria-label="Notification">
+        <!-- <button mat-icon-button aria-label="Notification">
           <mat-icon>notifications_none</mat-icon>
-        </button>
+        </button> -->
       </div>
     </mat-toolbar>
     <main>

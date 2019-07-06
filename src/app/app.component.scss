@@ -7,16 +7,6 @@
   width: 256px;
 }
 
-.home-link {
-  background-image: url('/assets/img/logo.png');
-  background-size: cover;
-  background-position-y: center;
-}
-
-.no-logo {
-  opacity: 0;
-}
-
 .site-name {
   height: 150px;
   width: 150px;
@@ -37,7 +27,7 @@
   position: fixed;
   top: 0;
   z-index: 4;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 1);
   padding: 0;
   transition: all 0.2s;
 
@@ -49,8 +39,7 @@
   }
 
   .home-link {
-    height: 100%;
-    width: 100px;
+    height: inherit;
   }
 }
 

@@ -13,6 +13,11 @@ $primary: #673ab7;
   margin: 0;
 }
 
+.col-2 {
+  display: grid;
+  gap: 48px;
+}
+
 .hero-block {
   height: calc(100vh + 1px);
   margin-top: -56px;
@@ -158,5 +163,9 @@ $primary: #673ab7;
 
   .about-block .container {
     grid-template-columns: 1.3fr 1fr;
+  }
+
+  .col-2 {
+    grid-template-columns: 1fr 1fr;
   }
 }

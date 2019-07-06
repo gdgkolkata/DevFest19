@@ -12,18 +12,18 @@ import {
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements AfterViewInit {
-  @ViewChild('heroContent', { read: ElementRef, static: true })
-  heroContent: ElementRef;
+  // @ViewChild('heroContent', { read: ElementRef, static: true })
+  // heroContent: ElementRef;
 
-  constructor(private renderer: Renderer2) {}
+  // constructor(private renderer: Renderer2) {}
 
   ngAfterViewInit() {
-    setTimeout(() => {
-      this.renderer.setStyle(
-        this.heroContent.nativeElement,
-        'background-color',
-        'rgba(0, 0, 0, 0.6)'
-      );
-    }, 0);
+    // setTimeout(() => {
+    //   this.renderer.setStyle(
+    //     this.heroContent.nativeElement,
+    //     'background-color',
+    //     'rgba(0, 0, 0, 0.6)'
+    //   );
+    // }, 0);
   }
 }
