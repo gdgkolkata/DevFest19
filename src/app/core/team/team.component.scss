@@ -32,12 +32,7 @@
 
   .team {
     display: grid;
-    row-gap: 48px;
-
-    @media only screen and (min-width: 640px) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      align-items: center;
-    }
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 48px;
   }
 }

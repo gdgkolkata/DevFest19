@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./team.component.scss']
 })
 export class TeamComponent implements OnInit {
-  team_members = [
+  teamMembers = [
     {
       name: 'Rivu Chakrabarty',
       designation: 'Co-organizer',
@@ -416,6 +416,7 @@ export class TeamComponent implements OnInit {
       teams: ['On Ground']
     }
   ];
+
   constructor() {}
 
   ngOnInit() {}
