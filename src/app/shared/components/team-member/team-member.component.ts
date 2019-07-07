@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Member } from '../../interfaces/member';
 
 @Component({
   selector: 'app-team-member',
@@ -8,7 +9,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./team-member.component.scss']
 })
 export class TeamMemberComponent implements OnInit {
-  @Input() member;
+  @Input() member: Member;
   imageLocation = 'https://github.com/xprilion/random-storage/raw/master/gdg/';
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon('twitter', sanitizer.bypassSecurityTrustResourceUrl('assets/img/social/twitter.svg'));

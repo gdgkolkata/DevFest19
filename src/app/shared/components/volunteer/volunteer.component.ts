@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Volunteer } from '../../interfaces/volunteer';
 
 @Component({
   selector: 'app-volunteer',
@@ -8,7 +9,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./volunteer.component.scss']
 })
 export class VolunteerComponent implements OnInit {
-  @Input() volunteer;
+  @Input() volunteer: Volunteer;
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon('slack', sanitizer.bypassSecurityTrustResourceUrl('assets/img/social/slack.svg'));

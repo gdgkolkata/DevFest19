@@ -6,16 +6,34 @@
     <div class="mat-title">{{ member.name }}</div>
     <div class="designation">{{ member.designation }}</div>
     <div class="links">
-      <a mat-icon-button aria-label="twitter"
-        [href]="member.twitter" target="_blank" rel="noopener noreferrer">
+      <a
+        mat-icon-button
+        *ngIf="member.twitter"
+        aria-label="twitter"
+        [href]="member.twitter"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <mat-icon svgIcon="twitter" aria-hidden="false" aria-label="twitter"></mat-icon>
       </a>
-      <a mat-icon-button aria-label="github"
-        [href]="member.github" target="_blank" rel="noopener noreferrer">
+      <a
+        mat-icon-button
+        *ngIf="member.github"
+        aria-label="github"
+        [href]="member.github"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <mat-icon svgIcon="github" aria-hidden="false" aria-label="github"></mat-icon>
       </a>
-      <a mat-icon-button aria-label="linkedin"
-        [href]="member.linkedin" target="_blank" rel="noopener noreferrer">
+      <a
+        mat-icon-button
+        *ngIf="member.linkedin"
+        aria-label="linkedin"
+        [href]="member.linkedin"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <mat-icon svgIcon="linkedin" aria-hidden="false" aria-label="linkedin"></mat-icon>
       </a>
     </div>
