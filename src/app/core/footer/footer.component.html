@@ -157,11 +157,11 @@ body::-webkit-scrollbar-thumb {
 
 </style>
 <div id="footer">
-  <a href="#top" id="top-button" style="background:rgba(83, 109, 254, 0.1);">
+  <div id="top-button" style="background:rgba(83, 109, 254, 0.1);cursor: pointer;">
     <i class="material-icons" style=" font-size: 30px;">
       keyboard_arrow_up
     </i>
-  </a>
+  </div>
   <div class="container" style="padding-top: 20px;">
     <div class="row">
       <div class="col-lg-3">
@@ -232,3 +232,17 @@ body::-webkit-scrollbar-thumb {
     </div>
   </div>
 </div>
+
+<script>
+    $('#top-button').on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html').animate({
+                scrollTop: 0
+            }, 800, function () {
+                window.location.hash = hash;
+            });
+        }
+    });
+</script>
