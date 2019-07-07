@@ -23,10 +23,10 @@
 <div class="container pad-all team-container">
   <div class="mat-display-1">Core Team</div>
   <div class="team">
-    <app-team-member *ngFor="let member of teamMembers" [member]="member"></app-team-member>
+    <app-team-member *ngFor="let member of team | async" [member]="member"></app-team-member>
   </div>
   <div class="mat-display-1">Volunteers</div>
   <div class="team">
-    <app-volunteer *ngFor="let volunteer of volunteers" [volunteer]="volunteer"></app-volunteer>
+    <app-volunteer *ngFor="let volunteer of volunteers | async" [volunteer]="volunteer"></app-volunteer>
   </div>
 </div>
