@@ -12,6 +12,7 @@ import { MatToolbar } from '@angular/material/toolbar';
 import { Observable } from 'rxjs';
 import { map, distinctUntilChanged, filter } from 'rxjs/operators';
 import { Router, NavigationEnd } from '@angular/router';
+import { MatSidenavContent } from '@angular/material/sidenav';
 
 interface NavLink {
   label: string;
@@ -29,6 +30,8 @@ export class AppComponent implements OnInit, AfterViewInit {
   isBreakpoint$: Observable<boolean>;
   @ViewChild('topBar', { read: ElementRef, static: true }) topBarEl: ElementRef;
   topBar: MatToolbar;
+  @ViewChild('body', { read: ElementRef, static: true }) bodyEl: ElementRef;
+  body: MatSidenavContent;
 
   constructor(
     private breakpointObserver: BreakpointObserver,
@@ -50,12 +53,18 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.topBar = this.topBarEl.nativeElement;
+    this.body = this.bodyEl.nativeElement;
     this.isBreakpoint$ = this.breakpointObserver
       .observe([Breakpoints.Small, Breakpoints.XSmall])
       .pipe(map(result => result.matches));
-    // this.router.events
-    //   .pipe(filter(event => event instanceof NavigationEnd))
-    //   .subscribe(() => window.scrollTo(0, 0));
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(_ =>
+        this.body.scrollTo({
+          top: 0,
+          left: 0
+        })
+      );
   }
 
   ngAfterViewInit() {

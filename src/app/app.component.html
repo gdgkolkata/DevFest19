@@ -15,7 +15,7 @@
         [routerLink]="link.path">{{link.label}}</a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content cdkScrollable>
+  <mat-sidenav-content cdkScrollable #body>
     <mat-toolbar #topBar
       class="topbar">
       <div class="container">
