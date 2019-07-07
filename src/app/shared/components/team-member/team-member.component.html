@@ -1,10 +1,20 @@
 <div class="team-member-container">
   <div class="img-container">
-    <app-round-img [src]=""></app-round-img>
+    <app-round-img [src]="imageLocation + member.profileImage"></app-round-img>
   </div>
   <div class="details">
-    <div class="mat-title">Oleh Zasadnyy</div>
-    <div>Website and sponsors</div>
-    <div class="links">link link link</div>
+    <div class="mat-title">{{ member.name }}</div>
+    <div class="designation">{{ member.designation }}</div>
+    <div class="links">
+      <a mat-icon-button aria-label="twitter" [href]="member.twitter" title="LinkedIn">
+        <mat-icon svgIcon="twitter" aria-hidden="false" aria-label="twitter"></mat-icon>
+      </a>
+      <a mat-icon-button aria-label="github" [href]="member.github" title="Slack">
+        <mat-icon svgIcon="github" aria-hidden="false" aria-label="github"></mat-icon>
+      </a>
+      <a mat-icon-button aria-label="linkedin" [href]="member.linkedin" title="Github">
+        <mat-icon svgIcon="linkedin" aria-hidden="false" aria-label="linkedin"></mat-icon>
+      </a>
+    </div>
   </div>
 </div>

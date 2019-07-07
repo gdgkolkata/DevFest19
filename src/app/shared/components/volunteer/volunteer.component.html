@@ -1,0 +1,19 @@
+<div class="volunteer-container">
+  <div class="img-container">
+    <app-round-img [src]="'assets/img/face.png'"></app-round-img>
+  </div>
+  <div class="details">
+    <div class="mat-title">{{ volunteer.name }}</div>
+    <div class="teams">
+      <div class="team" *ngFor="let team of volunteer.teams">{{ team }}</div>
+    </div>
+    <div class="links">
+      <a mat-icon-button aria-label="Notification" [href]="volunteer.linkedin" title="Linkedin">
+        <mat-icon svgIcon="linkedin" aria-hidden="false" aria-label="linkedin"></mat-icon>
+      </a>
+      <a mat-icon-button aria-label="Notification" [href]="volunteer.slack" title="Slack">
+        <mat-icon svgIcon="slack" aria-hidden="false" aria-label="slack"></mat-icon>
+      </a>
+    </div>
+  </div>
+</div>

@@ -21,11 +21,11 @@
 
 .team-container {
   .mat-display-1 {
-    &:first-child{
+    &:first-child {
       margin: 24px 0 32px;
     }
 
-    &:not(:first-child){
+    &:not(:first-child) {
       margin: 64px 0 32px;
     }
   }
@@ -33,6 +33,11 @@
   .team {
     display: grid;
     row-gap: 48px;
+
+    @media only screen and (min-width: 640px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+    }
   }
 }
-
