@@ -10,7 +10,8 @@ import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { ScrollDispatcher, CdkScrollable } from '@angular/cdk/scrolling';
 import { MatToolbar } from '@angular/material/toolbar';
 import { Observable } from 'rxjs';
-import { map, distinctUntilChanged } from 'rxjs/operators';
+import { map, distinctUntilChanged, filter } from 'rxjs/operators';
+import { Router, NavigationEnd } from '@angular/router';
 
 interface NavLink {
   label: string;
@@ -32,7 +33,8 @@ export class AppComponent implements OnInit, AfterViewInit {
   constructor(
     private breakpointObserver: BreakpointObserver,
     private scrollDispatcher: ScrollDispatcher,
-    private renderer: Renderer2
+    private renderer: Renderer2,
+    private router: Router
   ) {
     this.siteName = 'GDG Kolkata DevFest 2019';
     this.createRoutes();
@@ -41,8 +43,8 @@ export class AppComponent implements OnInit, AfterViewInit {
   private createRoutes() {
     this.navLinks = [];
     this.navLinks.push({ label: 'home', path: '/home' });
-    this.navLinks.push({ label: 'speakers', path: '/speakers' });
-    this.navLinks.push({ label: 'schedule', path: '/schedule' });
+    // this.navLinks.push({ label: 'speakers', path: '/speakers' });
+    // this.navLinks.push({ label: 'schedule', path: '/schedule' });
     this.navLinks.push({ label: 'team', path: '/team' });
   }
 
@@ -51,6 +53,9 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.isBreakpoint$ = this.breakpointObserver
       .observe([Breakpoints.Small, Breakpoints.XSmall])
       .pipe(map(result => result.matches));
+    // this.router.events
+    //   .pipe(filter(event => event instanceof NavigationEnd))
+    //   .subscribe(() => window.scrollTo(0, 0));
   }
 
   ngAfterViewInit() {

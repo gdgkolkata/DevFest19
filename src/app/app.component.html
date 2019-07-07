@@ -20,7 +20,6 @@
       class="topbar">
       <div class="container">
         <ng-container *ngIf="!(isBreakpoint$ | async); else iconButtons">
-          <!-- <a routerLink="/" class="home-link" #homeLink [class.no-logo]="isHomeLinkHidden"></a> -->
           <a routerLink="/" class="home-link">
             <img class="h-100" src="assets/img/logo.png"/>
           </a>
@@ -30,7 +29,9 @@
             [routerLink]="link.path"
             routerLinkActive="mat-flat-button mat-primary">{{link.label}}</a>
           <!-- <a mat-button>sign in</a> -->
-          <a mat-button>Apply for your Pass</a>
+          <a mat-button
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfnitNzIblk6ciVqYgIHRM303Dl44ZvpAtMcqvqWQeQUBYLdw/viewform?usp=sf_link"
+            target="_blank" rel="noopener noreferrer">Apply for your Pass</a>
         </ng-container>
         <ng-template #iconButtons>
           <button mat-icon-button aria-label="Toggle sidenav"
@@ -38,9 +39,6 @@
             <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
           </button>
           <!-- <span class="spacer"></span> -->
-          <!-- <button mat-icon-button aria-label="Sign In">
-            <mat-icon>account_circle</mat-icon>
-          </button> -->
         </ng-template>
         <!-- <button mat-icon-button aria-label="Notification">
           <mat-icon>notifications_none</mat-icon>
