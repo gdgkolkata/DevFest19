@@ -1,10 +1,10 @@
 <div class="volunteer-container">
   <div class="img-container">
-    <app-round-img [src]="'assets/img/face.png'"></app-round-img>
+    <app-round-img src="assets/img/face.png"></app-round-img>
   </div>
   <div class="details">
     <div class="mat-title">{{ volunteer.name }}</div>
-    <mat-chip-list aria-label="Fish selection">
+    <mat-chip-list aria-label="Teams">
       <mat-chip *ngFor="let team of volunteer.teams">{{team}}</mat-chip>
     </mat-chip-list>
     <div>
