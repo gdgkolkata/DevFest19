@@ -8,12 +8,8 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./volunteer.component.scss']
 })
 export class VolunteerComponent implements OnInit {
-  @Input() volunteer = {
-    name: 'Rivu Chakrabarty',
-    teams: ['On Ground', 'App'],
-    linkedin: 'https://twitter.com/rivuchakraborty',
-    slack: 'https://www.linkedin.com/in/rivuchk/'
-  };
+  @Input() volunteer;
+
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon('slack', sanitizer.bypassSecurityTrustResourceUrl('assets/img/social/slack.svg'));
     iconRegistry.addSvgIcon('linkedin', sanitizer.bypassSecurityTrustResourceUrl('assets/img/social/linkedin.svg'));

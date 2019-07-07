@@ -4,15 +4,17 @@
   </div>
   <div class="details">
     <div class="mat-title">{{ volunteer.name }}</div>
-    <div class="teams">
-      <div class="team" *ngFor="let team of volunteer.teams">{{ team }}</div>
-    </div>
-    <div class="links">
-      <a mat-icon-button aria-label="Notification" [href]="volunteer.linkedin" title="Linkedin">
-        <mat-icon svgIcon="linkedin" aria-hidden="false" aria-label="linkedin"></mat-icon>
+    <mat-chip-list aria-label="Fish selection">
+      <mat-chip *ngFor="let team of volunteer.teams">{{team}}</mat-chip>
+    </mat-chip-list>
+    <div>
+      <a mat-icon-button aria-label="Notification"
+        [href]="volunteer.linkedin" target="_blank" rel="noopener noreferrer">
+        <mat-icon svgIcon="linkedin" aria-hidden="false" aria-label="Linkedin"></mat-icon>
       </a>
-      <a mat-icon-button aria-label="Notification" [href]="volunteer.slack" title="Slack">
-        <mat-icon svgIcon="slack" aria-hidden="false" aria-label="slack"></mat-icon>
+      <a mat-icon-button aria-label="Notification"
+        [href]="volunteer.slack" target="_blank" rel="noopener noreferrer">
+        <mat-icon svgIcon="slack" aria-hidden="false" aria-label="Slack"></mat-icon>
       </a>
     </div>
   </div>
