@@ -21,18 +21,18 @@
 
 .team-container {
   .mat-display-1 {
-    &:first-child{
+    &:first-child {
       margin: 24px 0 32px;
     }
 
-    &:not(:first-child){
+    &:not(:first-child) {
       margin: 64px 0 32px;
     }
   }
 
   .team {
     display: grid;
-    row-gap: 48px;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 48px;
   }
 }
-

@@ -1,6 +1,6 @@
 $img-size: 96px;
 
-.team-member-container {
+.volunteer-container {
   display: grid;
   grid-template-columns: $img-size auto;
   column-gap: 24px;
@@ -14,8 +14,6 @@ $img-size: 96px;
     .mat-title {
       font-weight: normal;
       margin: 0;
-    }
-    .links {
     }
   }
 }

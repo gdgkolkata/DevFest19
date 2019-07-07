@@ -38,32 +38,39 @@ $primary: #673ab7;
   margin-bottom: 8px;
 }
 
-@media (min-width: 370px) {
-  .hero-block .hero-content {
-    .container {
-      gap: 48px;
+.square-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 48px;
+}
 
-      .actions {
-        grid-auto-flow: column;
-        gap: 15px;
-      }
-    }
+.topic {
+  width: max-content;
+  padding: 7px 21px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 
-    .scroll-down {
-      bottom: 15px;
-    }
-  }
+@mixin colorCombination($backgroundColor, $color) {
+  background-color: $backgroundColor;
+  color: $color;
+}
+.yellow {
+  @include colorCombination(rgba(247, 212, 17, 0.15), rgb(228, 180, 25));
+}
+.blue {
+  @include colorCombination(rgba(12, 80, 182,0.15), rgb(12, 80, 182));
+}
+.red {
+  @include colorCombination(rgba(223, 77, 19,0.15), rgb(223, 77, 19));
+}
+.green {
+  @include colorCombination(rgba(11, 184, 83,0.15), rgb(11, 184, 83));
 }
 
 @media (min-width: 600px) {
-  .hero-block {
-    margin-top: -64px;
-  }
-
-  .about-block .container {
-    grid-template-columns: 1.3fr 1fr;
-  }
-
   .col-2 {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "textArea imageArea";

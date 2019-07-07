@@ -11,6 +11,7 @@ import { FilterComponent } from './components/filter/filter.component';
 import { RoundImgComponent } from './components/round-img/round-img.component';
 import { TeamMemberComponent } from './components/team-member/team-member.component';
 import { TimeSlotComponent } from './components/time-slot/time-slot.component';
+import { VolunteerComponent } from './components/volunteer/volunteer.component';
 
 import { SpeakerPopupComponent } from './components/speaker-popup/speaker-popup.component';
 import { SessionPopupComponent } from './components/session-popup/session-popup.component';
@@ -25,7 +26,8 @@ import { SessionPopupComponent } from './components/session-popup/session-popup.
     RoundImgComponent,
     TeamMemberComponent,
     TimeSlotComponent,
-    SessionPopupComponent
+    SessionPopupComponent,
+    VolunteerComponent
   ],
   entryComponents: [SpeakerPopupComponent, SessionPopupComponent],
   imports: [CommonModule, MaterialModule],
@@ -34,7 +36,8 @@ import { SessionPopupComponent } from './components/session-popup/session-popup.
     SpeakerComponent,
     FilterComponent,
     TeamMemberComponent,
-    TimeSlotComponent
+    TimeSlotComponent,
+    VolunteerComponent
   ]
 })
 export class SharedModule {}
