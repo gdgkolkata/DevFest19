@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/browser",
+    "public": "dist/DevFest19",
     "ignore": [
       "firebase.json",
       "**/.*",

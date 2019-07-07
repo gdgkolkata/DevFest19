@@ -3,5 +3,6 @@ export interface Member {
   designation: string;
   twitter: string;
   linkedin: string;
+  github: string;
   profileImage: string;
 }
