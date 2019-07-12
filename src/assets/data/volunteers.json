@@ -1,338 +1,470 @@
 [
-  {
-    "name": "Jyoti Mishra",
-    "email": "jyotimishra29091997@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/jyoti-mishra-56a25415b",
-    "slack": "https://devfest-19.slack.com/team/UKYS22PTK",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Rishiraj Acharya",
-    "email": "rshrjacharya@gmail.com",
-    "linkedin": "www.linkedin.com/in/rishirajacharya/",
-    "slack": "devfest-19.slack.com/team/UL72WQJP9",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Varun Vishal",
-    "email": "varunvishal10@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/varun-vishal/",
-    "slack": "https://devfest-19.slack.com/team/UKTQYTPLK",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Koustav Dhar Chowdhury",
-    "email": "koustav13198@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/kdc13198/",
-    "slack": "https://devfest-19.slack.com/team/UL7B8NXDL",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Pranita Ganguly",
-    "email": "pranitaganguly17@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/pranita-ganguly-8a1873175/",
-    "slack": "https://devfest-19.slack.com/team/UL86ZDZLN",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Soham Jana",
-    "email": "janasoham11@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/soham-jana-407a27185",
-    "slack": "https://devfest-19.slack.com/team/UKYTE0DQR",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Vishwajeet Raj",
-    "email": "vishwajeetraj11@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/vishwajeet-raj-41129a169",
-    "slack": "https://devfest-19.slack.com/team/UL7BVUGBY",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Mahak Makharia",
-    "email": "makhariamahak@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/mahakmakharia/",
-    "slack": "https://devfest-19.slack.com/team/UL57NH8DT",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Ritesh Prasad Singh",
-    "email": "riteshprasadsingh8@gmail.com",
-    "linkedin": "linkedin.com/in/ritesh-prasad-singh-a4321b148/",
-    "slack": "https://devfest-19.slack.com/team/UL7B5GUBY",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "MD FAZAL MUSTAFA",
-    "email": "fazalmd964@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/md-fazal-mustafa-ba5265129/",
-    "slack": "https://devfest-19.slack.com/team/UKYSCUJG1",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Atisaya Jain",
-    "email": "atisayajain@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/atisayajain/",
-    "slack": "https://devfest-19.slack.com/team/UKTQE13L2",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Utsav Akash Naskar",
-    "email": "utsavakash123@gmail.com",
-    "linkedin": "www.linkedin.com/in/utsav-akash-naskar-5207b2169",
-    "slack": "https://devfest-19.slack.com/team/UKTQUPV27",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Shashwat Sinha",
-    "email": "shashwat3057@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/shashwat3057/",
-    "slack": "https://devfest-19.slack.com/team/UL4P8BFEG",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Anjali",
-    "email": "anjali001.as@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/anjali-singh-282b66170",
-    "slack": "https://devfest-19.slack.com/team/UL4NG41QU",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Aniket Kumar",
-    "email": "aniketkumar049@gmail.com",
-    "linkedin": "https://linkedin.com/in/aniketkumar049/",
-    "slack": "https://devfest-19.slack.com/team/UL571AYNL/",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Divya Goswami",
-    "email": "divyadeepti2000@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/divya-goswami-1a863616b",
-    "slack": "https://devfest-19.slack.com/team/UL56YCGF2",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Faiz Alam",
-    "email": "faiz276482@gmail.com",
-    "linkedin": "www.linkedin.com/in/faiz-alam-1934bb180/",
-    "slack": "https://devfest-19.slack.com/team/UL56YNKGQ",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Aniket Kumar Singh",
-    "email": "aniketkrsingh3@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/aniket-singh-361138176",
-    "slack": "https://devfest-19.slack.com/team/UKYS3BH2M",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Abhik Banerjee",
-    "email": "abhik.banerjee.1999@gmail.com",
-    "linkedin": "https://linkedin.com/in/abhik-banerjee-591081164/",
-    "slack": "https://devfest-19.slack.com/team/UKTQDCJD8",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Dipayan Bhattacharjee",
-    "email": "dipayanbhattacharjee1997@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/dipayan-bhattacharjee-4156a1163",
-    "slack": "https://devfest-19.slack.com/team/UL56Y3ZLG",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Amit Rai",
-    "email": "ardev472@gmail.com",
-    "linkedin": "https://linkedin.com/in/amit-rai-412748170",
-    "slack": "https://devfest-19.slack.com/team/UL56ZG6F2",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Subhasis Das",
-    "email": "subhasisdas125@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/subhasis-das-6a00aa172/",
-    "slack": "https://devfest-19.slack.com/team/UKTS2CG4T",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Ritika Pal",
-    "email": "palritika71@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/ritika-pal-13a373179/",
-    "slack": "https://devfest-19.slack.com/team/UKTQPL30B",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Sayantak Karar",
-    "email": "sayantakkarar@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/sayantak-karar-93870716b",
-    "slack": "https://devfest-19.slack.com/team/UL72LQ3KR",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Atri Das",
-    "email": "babinsamrat123@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/atri-samrat-d-a64402104/",
-    "slack": "https://devfest-19.slack.com/team/UKTQN8GV9",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Anurag Singh",
-    "email": "anurags228@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/anurag-singh-997461163",
-    "slack": "https://devfest-19.slack.com/team/UKZGFQ2FK",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Debroop Gupta",
-    "email": "debroop42@gmail.com",
-    "linkedin": "www.linkedin.com/in/debroop-gupta",
-    "slack": "https://devfest-19.slack.com/team/UKYS1SHSM",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Aniket Kumar",
-    "email": "kumaraniket1729@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/aniketjha1729/",
-    "slack": "https://devfest-19.slack.com/team/UL4PH7J20",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Rajwrita Nath",
-    "email": "rajwritanath@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/rajwrita-nath/",
-    "slack": "https://devfest-19.slack.com/team/UKTQWJZ51",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Piyush Sinha",
-    "email": "piyush.sinha24@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/dev-PS",
-    "slack": "https://devfest-19.slack.com/team/UL7CXJQES",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Soham Jana",
-    "email": "janasoham11@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/soham-jana-407a27185/",
-    "slack": "https://devfest-19.slack.com/team/UKYTE0DQR",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Somdev Basu",
-    "email": "somdevbasu100@gmail.com",
-    "linkedin": "https://linkedin.com/in/bosecodes",
-    "slack": "https://devfest-19.slack.com/team/UKTPF17EE",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Arnab Chanda",
-    "email": "arnabchanda964@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/arnab-chanda-aa671017a/",
-    "slack": "https://devfest-19.slack.com/team/UL57SAGJ1",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Yashashwee Chakrabarty",
-    "email": "yashashwee99@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/yashashwee-chakrabarty-60a63416b/",
-    "slack": "https://devfest-19.slack.com/team/UL4NV8YR2",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Piyush Maheswari",
-    "email": "piyushmaheswari29@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/piyush-maheswari-835424138/",
-    "slack": "https://devfest-19.slack.com/team/UKYSQPMHP/",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Ashmita Sen",
-    "email": "iamashmitasen@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/ashmita-sen-a0700617b",
-    "slack": "https://devfest-19.slack.com/team/UKTQ6EF9Q",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Anubhav Kumar Singh",
-    "email": "anubhavkumar45aks@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/anubhavkumar11/",
-    "slack": "https://devfest-19.slack.com/team/UL57EJ2ER",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Sayak Banerjee",
-    "email": "sayakani1998@gmail.com",
-    "linkedin": "http://linkedin.com/in/sayak-banerjee-09692a15b",
-    "slack": "https://devfest-19.slack.com/team/UKTRYCKNX",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Debmallya Bhattacharya",
-    "email": "debmallyabhattacharya@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/debmallya-bhattacharya-a93507aa/",
-    "slack": "https://devfest-19.slack.com/team/UKTRVKXK5",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Ankita Prakash",
-    "email": "ankita.prakash1998@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/ankita-prakash-90668b177/",
-    "slack": "https://devfest-19.slack.com/team/UL57B7F7F",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Zaid Alam",
-    "email": "zalam307@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/zaid-alam-00b176170/",
-    "slack": "https://devfest-19.slack.com/team/UL72L6UVD",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Diya Banerjee",
-    "email": "diya17071999@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/diya-banerjee-79922b18b",
-    "slack": "https://devfest-19.slack.com/messages/@UKVC43WUT",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Pratyusha Mitra",
-    "email": "pratyushamitra20@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/pratyusha-mitra-15a22b18b/",
-    "slack": "https://devfest-19.slack.com/team/UKVA06XT4",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Gaurav Prasad",
-    "email": "gaurav.prasad.kol@gmail.com",
-    "linkedin": "www.linkedin.com/in/gaurav-prasad-496500144",
-    "slack": "https://devfest-19.slack.com/team/UL7B815DL",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Arpit Das",
-    "email": "arpitdas118@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/arpitdaskolkata/",
-    "slack": "https://devfest-19.slack.com/team/UL4P81VD2",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Swetank Raj",
-    "email": "swetank@swetank.rocks",
-    "linkedin": "https://www.linkedin.com/in/swetankraj/",
-    "slack": "https://devfest-19.slack.com/team/UL7LK06PQ",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Shreya Mallik",
-    "email": "shreyamallik165@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/shreya-mallik-4b1138174",
-    "slack": "https://devfest-19.slack.com/team/UL4NJN8F6",
-    "teams": ["On Ground"]
-  },
-  {
-    "name": "Mrinal Kanti Ghosh",
-    "email": "ghosh.mrinalkanti382@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/mrinal-kanti-ghosh/",
-    "slack": "https://devfest-19.slack.com/team/UKTQ5QCSE",
-    "teams": ["On Ground"]
-  }
+    {
+        "name": "Jyoti Mishra",
+        "email": "jyotimishra29091997@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/jyoti-mishra-56a25415b",
+        "slack": "https://devfest-19.slack.com/team/UKYS22PTK",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Rishiraj Acharya",
+        "email": "rshrjacharya@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/rishirajacharya/",
+        "slack": "https://devfest-19.slack.com/team/UL72WQJP9",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Varun Vishal",
+        "email": "varunvishal10@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/varun-vishal/",
+        "slack": "https://devfest-19.slack.com/team/UKTQYTPLK",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Koustav Dhar Chowdhury",
+        "email": "koustav13198@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/kdc13198/",
+        "slack": "https://devfest-19.slack.com/team/UL7B8NXDL",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Pranita Ganguly",
+        "email": "pranitaganguly17@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/pranita-ganguly-8a1873175/",
+        "slack": "https://devfest-19.slack.com/team/UL86ZDZLN",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Soham Jana",
+        "email": "janasoham11@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/soham-jana-407a27185",
+        "slack": "https://devfest-19.slack.com/team/UKYTE0DQR",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Vishwajeet Raj",
+        "email": "vishwajeetraj11@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/vishwajeet-raj-41129a169",
+        "slack": "https://devfest-19.slack.com/team/UL7BVUGBY",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Mahak Makharia",
+        "email": "makhariamahak@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/mahakmakharia/",
+        "slack": "https://devfest-19.slack.com/team/UL57NH8DT",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Ritesh Prasad Singh",
+        "email": "riteshprasadsingh8@gmail.com",
+        "linkedin": "linkedin.com/in/ritesh-prasad-singh-a4321b148/",
+        "slack": "https://devfest-19.slack.com/team/UL7B5GUBY",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "MD Fazal Mustafa",
+        "email": "fazalmd964@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/md-fazal-mustafa-ba5265129/",
+        "slack": "https://devfest-19.slack.com/team/UKYSCUJG1",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Atisaya Jain",
+        "email": "atisayajain@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/atisayajain/",
+        "slack": "https://devfest-19.slack.com/team/UKTQE13L2",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Utsav Akash Naskar",
+        "email": "utsavakash123@gmail.com",
+        "linkedin": "www.linkedin.com/in/utsav-akash-naskar-5207b2169",
+        "slack": "https://devfest-19.slack.com/team/UKTQUPV27",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Shashwat Sinha",
+        "email": "shashwat3057@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/shashwat3057/",
+        "slack": "https://devfest-19.slack.com/team/UL4P8BFEG",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Anjali",
+        "email": "anjali001.as@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/anjali-singh-282b66170",
+        "slack": "https://devfest-19.slack.com/team/UL4NG41QU",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Aniket Kumar",
+        "email": "aniketkumar049@gmail.com",
+        "linkedin": "https://linkedin.com/in/aniketkumar049/",
+        "slack": "https://devfest-19.slack.com/team/UL571AYNL/",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Divya Goswami",
+        "email": "divyadeepti2000@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/divya-goswami-1a863616b",
+        "slack": "https://devfest-19.slack.com/team/UL56YCGF2",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Faiz Alam",
+        "email": "faiz276482@gmail.com",
+        "linkedin": "www.linkedin.com/in/faiz-alam-1934bb180/",
+        "slack": "https://devfest-19.slack.com/team/UL56YNKGQ",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Aniket Kumar Singh",
+        "email": "aniketkrsingh3@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/aniket-singh-361138176",
+        "slack": "https://devfest-19.slack.com/team/UKYS3BH2M",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Abhik Banerjee",
+        "email": "abhik.banerjee.1999@gmail.com",
+        "linkedin": "https://linkedin.com/in/abhik-banerjee-591081164/",
+        "slack": "https://devfest-19.slack.com/team/UKTQDCJD8",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Dipayan Bhattacharjee",
+        "email": "dipayanbhattacharjee1997@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/dipayan-bhattacharjee-4156a1163",
+        "slack": "https://devfest-19.slack.com/team/UL56Y3ZLG",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Amit Rai",
+        "email": "ardev472@gmail.com",
+        "linkedin": "https://linkedin.com/in/amit-rai-412748170",
+        "slack": "https://devfest-19.slack.com/team/UL56ZG6F2",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Subhasis Das",
+        "email": "subhasisdas125@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/subhasis-das-6a00aa172/",
+        "slack": "https://devfest-19.slack.com/team/UKTS2CG4T",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Ritika Pal",
+        "email": "palritika71@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/ritika-pal-13a373179/",
+        "slack": "https://devfest-19.slack.com/team/UKTQPL30B",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Sayantak Karar",
+        "email": "sayantakkarar@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/sayantak-karar-93870716b",
+        "slack": "https://devfest-19.slack.com/team/UL72LQ3KR",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Atri Das",
+        "email": "babinsamrat123@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/atri-samrat-d-a64402104/",
+        "slack": "https://devfest-19.slack.com/team/UKTQN8GV9",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Anurag Singh",
+        "email": "anurags228@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/anurag-singh-997461163",
+        "slack": "https://devfest-19.slack.com/team/UKZGFQ2FK",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Debroop Gupta",
+        "email": "debroop42@gmail.com",
+        "linkedin": "www.linkedin.com/in/debroop-gupta",
+        "slack": "https://devfest-19.slack.com/team/UKYS1SHSM",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Aniket Kumar",
+        "email": "kumaraniket1729@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/aniketjha1729/",
+        "slack": "https://devfest-19.slack.com/team/UL4PH7J20",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Rajwrita Nath ",
+        "email": "rajwritanath@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/rajwrita-nath/",
+        "slack": "https://devfest-19.slack.com/team/UKTQWJZ51",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Piyush Sinha",
+        "email": "piyush.sinha24@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/dev-PS",
+        "slack": "https://devfest-19.slack.com/team/UL7CXJQES",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Soham Jana",
+        "email": "janasoham11@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/soham-jana-407a27185/",
+        "slack": "https://devfest-19.slack.com/team/UKYTE0DQR",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Somdev Basu",
+        "email": "somdevbasu100@gmail.com",
+        "linkedin": "https://linkedin.com/in/bosecodes",
+        "slack": "https://devfest-19.slack.com/team/UKTPF17EE",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Arnab Chanda",
+        "email": "arnabchanda964@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/arnab-chanda-aa671017a/",
+        "slack": "https://devfest-19.slack.com/team/UL57SAGJ1",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Yashashwee Chakrabarty",
+        "email": "yashashwee99@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/yashashwee-chakrabarty-60a63416b/",
+        "slack": "https://devfest-19.slack.com/team/UL4NV8YR2",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Piyush Maheswari",
+        "email": "piyushmaheswari29@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/piyush-maheswari-835424138/",
+        "slack": "https://devfest-19.slack.com/team/UKYSQPMHP/",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Ashmita Sen",
+        "email": "iamashmitasen@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/ashmita-sen-a0700617b",
+        "slack": "https://devfest-19.slack.com/team/UKTQ6EF9Q",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Anubhav Kumar Singh",
+        "email": "anubhavkumar45aks@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/anubhavkumar11/",
+        "slack": "https://devfest-19.slack.com/team/UL57EJ2ER",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Sayak Banerjee",
+        "email": "sayakani1998@gmail.com",
+        "linkedin": "http://linkedin.com/in/sayak-banerjee-09692a15b",
+        "slack": "https://devfest-19.slack.com/team/UKTRYCKNX",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Debmallya Bhattacharya",
+        "email": "debmallyabhattacharya@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/debmallya-bhattacharya-a93507aa/",
+        "slack": "https://devfest-19.slack.com/team/UKTRVKXK5",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Ankita Prakash",
+        "email": "ankita.prakash1998@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/ankita-prakash-90668b177/",
+        "slack": "https://devfest-19.slack.com/team/UL57B7F7F",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Zaid Alam",
+        "email": "zalam307@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/zaid-alam-00b176170/",
+        "slack": "https://devfest-19.slack.com/team/UL72L6UVD",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Diya Banerjee",
+        "email": "diya17071999@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/diya-banerjee-79922b18b",
+        "slack": "https://devfest-19.slack.com/team/UKVC43WUT",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Pratyusha Mitra",
+        "email": "pratyushamitra20@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/pratyusha-mitra-15a22b18b/",
+        "slack": "https://devfest-19.slack.com/team/UKVA06XT4",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Gaurav Prasad",
+        "email": "gaurav.prasad.kol@gmail.com",
+        "linkedin": "www.linkedin.com/in/gaurav-prasad-496500144",
+        "slack": "https://devfest-19.slack.com/team/UL7B815DL",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Arpit Das",
+        "email": "arpitdas118@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/arpitdaskolkata/",
+        "slack": "https://devfest-19.slack.com/team/UL4P81VD2",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Swetank Raj",
+        "email": "swetank@swetank.rocks",
+        "linkedin": "https://www.linkedin.com/in/swetankraj/",
+        "slack": "https://devfest-19.slack.com/team/UL7LK06PQ",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Shreya Mallik",
+        "email": "shreyamallik165@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/shreya-mallik-4b1138174",
+        "slack": "https://devfest-19.slack.com/team/UL4NJN8F6",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Mrinal Kanti Ghosh",
+        "email": "ghosh.mrinalkanti382@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/mrinal-kanti-ghosh/",
+        "slack": "https://devfest-19.slack.com/team/UKTQ5QCSE",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Prashansa Agarwal",
+        "email": "prashansaagarwal101@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/prashansa-agarwal/",
+        "slack": "https://devfest-19.slack.com/team/UL580JAFP",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Avijit Chakraborty",
+        "email": "avijitchakraborty1998@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/avijit-chakraborty",
+        "slack": "https://devfest-19.slack.com/team/UKU5NQYBC",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Sonali Sharan",
+        "email": "sonalisharan92@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/sonali-sharan-0a3136173/",
+        "slack": "https://devfest-19.slack.com/team/UKU10VDT5",
+        "teams": [
+            "On Ground"
+        ]
+    },
+    {
+        "name": "Binit Kumar Mondal",
+        "email": "iambinitkumarmondal@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/binit-kumar-mondal-510108171",
+        "slack": "https://devfest-19.slack.com/team/UL7CD9LCW",
+        "teams": [
+            "On Ground"
+        ]
+    }
 ]
