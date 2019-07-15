@@ -24,4 +24,8 @@ action "GitHub Action for Firebase" {
   needs = ["GitHub Action for npm-2"]
   secrets = ["FIREBASE_TOKEN"]
   args = "deploy"
+  env = {
+    PROJECT_ID = "devfest-19"
+    PUBLIC_PATH = "dist/DevFest19"
+  }
 }
