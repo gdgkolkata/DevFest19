@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Rivu Chakrabarty",
+        "designation": "Co-organizer",
+        "twitter": "https://twitter.com/rivuchakraborty",
+        "linkedin": "https://www.linkedin.com/in/rivuchk/",
+        "profileImage": "RivuC.jpeg"
+    },
+    {
+        "name": "Manisha Biswas",
+        "designation": "Organizer",
+        "twitter": "https://twitter.com/manisha_biswas7?lang=en",
+        "linkedin": "https://www.linkedin.com/in/manisha-biswas-2a3228114/",
+        "profileImage": "ManishaB.jpeg"
+    },
+    {
+        "name": "Tanmay Ghosh",
+        "designation": "Conceptualizer",
+        "twitter": "#",
+        "linkedin": "#",
+        "profileImage": "TanmayG.jpeg"
+    },
+    {
+        "name": "Koushik Pal",
+        "designation": "Founder- GDG Kolkata",
+        "twitter": "https://twitter.com/hello2pal",
+        "linkedin": "https://www.linkedin.com/in/koushik-pal-06572525/",
+        "profileImage": "KaushikP.jpeg"
+    },
+    {
+        "name": "Suvankar Bose",
+        "designation": "Founder- GDG Kolkata",
+        "twitter": "https://twitter.com/suvankarbose",
+        "linkedin": "https://www.linkedin.com/in/suvankar-bose-a6602937/",
+        "profileImage": "SuvankarB.jpeg"
+    },
+    {
+        "name": "Indranil Dutta",
+        "designation": "Event Organizer",
+        "twitter": "https://www.twitter.com/iamindraD",
+        "linkedin": "https://www.linkedin.com/in/indranil-dutta-06",
+        "profileImage": "IndranilD.jpeg"
+    },
+    {
+        "name": "Sayak Paul",
+        "designation": "Event Organizer",
+        "twitter": "https://twitter.com/RisingSayak",
+        "linkedin": "https://www.linkedin.com/in/sayak-paul/",
+        "profileImage": "SayakP.jpeg"
+        
+    },
+    {
+        "name": "Shuvam Manna",
+        "designation": "Event Organizer",
+        "twitter": "https://twitter.com/shuvam360",
+        "linkedin": "https://www.linkedin.com/in/shuvam-manna/",
+        "profileImage": "ShuvamM.jpeg"
+    },
+    {
+      "name": "Anubhav Singh",
+      "designation": "Event Organizer",
+      "twitter": "https://twitter.com/xprilion",
+      "linkedin": "https://www.linkedin.com/in/xprilion/",
+      "profileImage": "AnubhavS.jpeg"
+    },
+    {
+        "name": "Ritwik Raha",
+        "designation": "Design Head",
+        "twitter": "https://twitter.com/RahaRitwik",
+        "linkedin": "https://www.linkedin.com/in/ritwik-raha/",
+        "profileImage": "RitwikR.jpeg"
+        
+    }
+]
