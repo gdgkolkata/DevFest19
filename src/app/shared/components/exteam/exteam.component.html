@@ -1,0 +1,41 @@
+<div class="exteam-container">
+  <div class="img-container">
+    <app-round-img [src]="imageLocation + exmember.profileImage"></app-round-img>
+  </div>
+  <div class="details">
+    <div class="mat-title">{{ exmember.name }}</div>
+    <div class="designation">{{ exmember.designation }}</div>
+    <div class="links">
+      <a
+        mat-icon-button
+        *ngIf="exmember.twitter"
+        aria-label="twitter"
+        [href]="exmember.twitter" 
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <mat-icon svgIcon="twitter" aria-hidden="false" aria-label="twitter"></mat-icon>
+      </a>
+      <a
+        mat-icon-button
+        *ngIf="exmember.github"
+        aria-label="github"
+        [href]="exmember.github"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <mat-icon svgIcon="github" aria-hidden="false" aria-label="github"></mat-icon>
+      </a>
+      <a
+        mat-icon-button
+        *ngIf="exmember.linkedin"
+        aria-label="linkedin"
+        [href]="exmember.linkedin"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <mat-icon svgIcon="linkedin" aria-hidden="false" aria-label="linkedin"></mat-icon>
+      </a>
+    </div>
+  </div>
+</div>

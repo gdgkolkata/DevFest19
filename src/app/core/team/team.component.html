@@ -25,6 +25,10 @@
   <div class="team">
     <app-team-member *ngFor="let member of team | async" [member]="member"></app-team-member>
   </div>
+  <div class="mat-display-1">Partner Communities Organizing Team</div>
+  <div class="team">
+    <app-exteam *ngFor="let exmember of exteam | async" [exmember]="exmember"></app-exteam>
+  </div>
   <div class="mat-display-1">Volunteers</div>
   <div class="team">
     <app-volunteer *ngFor="let volunteer of volunteers | async" [volunteer]="volunteer"></app-volunteer>

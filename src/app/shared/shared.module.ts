@@ -10,6 +10,7 @@ import { SpeakerComponent } from './components/speaker/speaker.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { RoundImgComponent } from './components/round-img/round-img.component';
 import { TeamMemberComponent } from './components/team-member/team-member.component';
+import { ExteamComponent } from './components/exteam/exteam.component';
 import { TimeSlotComponent } from './components/time-slot/time-slot.component';
 import { VolunteerComponent } from './components/volunteer/volunteer.component';
 
@@ -24,6 +25,7 @@ import { SessionPopupComponent } from './components/session-popup/session-popup.
     FilterComponent,
     SpeakerPopupComponent,
     RoundImgComponent,
+    ExteamComponent,
     TeamMemberComponent,
     TimeSlotComponent,
     SessionPopupComponent,
@@ -35,6 +37,7 @@ import { SessionPopupComponent } from './components/session-popup/session-popup.
     MaterialModule,
     SpeakerComponent,
     FilterComponent,
+    ExteamComponent,
     TeamMemberComponent,
     TimeSlotComponent,
     VolunteerComponent

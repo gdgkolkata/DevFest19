@@ -29,6 +29,10 @@ export class AppService {
     return this.http.get('assets/data/teams.json') as Observable<Member[]>;
   }
 
+  getExteam(): Observable<Member[]> {
+    return this.http.get('assets/data/exteams.json') as Observable<Member[]>;
+  }
+
   getVolunteers(): Observable<Volunteer[]> {
     return this.http.get('assets/data/volunteers.json') as Observable<Volunteer[]>;
   }

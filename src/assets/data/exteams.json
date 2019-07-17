@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Abhishek Nandy",
+        "designation": "Organizer @ GDG Cloud Kolkata",
+        "twitter": "https://twitter.com/AbhishekNandy81",
+        "linkedin": "https://in.linkedin.com/in/abhishek-nandy-74ba592a",
+        "profileImage": "AbhishekN.jpeg"
+    },
+    {
+        "name": "Chirag Nayyar",
+        "designation": "Organizer @ AWS Kolkata Group ",
+        "twitter": "https://twitter.com/chiragnayyar",
+        "linkedin": "https://www.linkedin.com/in/chiragnayyar/",
+        "profileImage": "ChiragN.jpeg"
+    },
+    {
+        "name": "Sabyasachi Mukhopadhyay",
+        "designation": "Organizer @ Facebook Dev Circle Kolkata",
+        "twitter": "#",
+        "linkedin": "https://www.linkedin.com/in/sabyasachi-mukhopadhyay-303a1027/",
+        "profileImage": "SabyasachiM.jpeg"
+    }
+]

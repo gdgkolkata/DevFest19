@@ -46,7 +46,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   private createRoutes() {
     this.navLinks = [];
     this.navLinks.push({ label: 'home', path: '/home' });
-    // this.navLinks.push({ label: 'speakers', path: '/speakers' });
+    this.navLinks.push({ label: 'speakers', path: '/speakers' });
     // this.navLinks.push({ label: 'schedule', path: '/schedule' });
     this.navLinks.push({ label: 'team', path: '/team' });
   }
