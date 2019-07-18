@@ -14,7 +14,8 @@
   }
 }
 
-$border: 1px solid rgba(0,0,0,.12);
+$border: 1px solid rgba(0, 0, 0, .12);
+
 .session {
   min-height: 162px;
   $pad: 16px;
@@ -28,7 +29,8 @@ $border: 1px solid rgba(0,0,0,.12);
   border-top: $border;
   border-bottom: $border;
 
-  .mat-title, .mat-subheading-1 {
+  .mat-title,
+  .mat-subheading-1 {
     line-height: 1.2;
   }
 
@@ -41,6 +43,7 @@ $border: 1px solid rgba(0,0,0,.12);
   .session {
     border: $border;
   }
+
 }
 
 @media (min-width: 812px) {
@@ -59,10 +62,28 @@ $border: 1px solid rgba(0,0,0,.12);
       margin: unset;
       padding: unset;
     }
-
-    .session-container {
-      @include grid;
-      grid-template-columns: 1fr 1fr;
-    }
   }
 }
+
+.normalSession {
+  @mixin grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 16px;
+  }
+
+  @include grid;
+  grid-template-columns: 1fr;
+}
+
+.plenumSession {
+  @mixin grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 16px;
+  }
+
+  @include grid;
+  grid-template-columns: 1fr;
+}
+
