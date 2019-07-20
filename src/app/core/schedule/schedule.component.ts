@@ -1,23 +1,24 @@
-import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
-import { DynamicScriptLoaderService } from 'src/app/shared/services/dynamic-script-loader.service';
+import { Component, OnInit } from '@angular/core';
+import { finalize } from 'rxjs/operators';
+import { AppService } from 'src/app/shared/services/app.service';
+import { Schedule } from 'src/app/shared/interfaces/schedule';
 
 @Component({
   selector: 'app-schedule',
   templateUrl: './schedule.component.html',
   styleUrls: ['./schedule.component.scss']
 })
-export class ScheduleComponent implements AfterViewInit {
-  isLoading = true;
-  @ViewChild('sessionizeGrid', { static: false }) sessionizeGridEl: ElementRef;
-  sessionizeGrid: HTMLDivElement;
+export class ScheduleComponent implements OnInit {
+  schedules: Schedule[] = [];
+  isLoading: boolean;
 
-  constructor(private dynamicScriptLoader: DynamicScriptLoaderService) {}
+  constructor(private appService: AppService) {}
 
-  ngAfterViewInit() {
-    this.sessionizeGrid = this.sessionizeGridEl.nativeElement;
-    this.dynamicScriptLoader
-      .load('grid', this.sessionizeGrid)
-      .then(_ => (this.isLoading = false))
-      .catch(console.log);
+  ngOnInit() {
+    this.isLoading = true;
+    this.appService
+      .getSchedule()
+      .pipe(finalize(() => (this.isLoading = false)))
+      .subscribe(schedules => (this.schedules = schedules));
   }
 }

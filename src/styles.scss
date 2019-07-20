@@ -56,11 +56,3 @@ button, a[class*="-button"] {
 .h-100 {
   height: 100%;
 }
-
-#sessionize .sz-grid {
-  .sz-session--service,
-  .sz-session--grid,
-  .sz-session--grid:hover {
-    z-index: 1 !important;
-  }
-}
