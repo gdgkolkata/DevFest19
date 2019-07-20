@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'schedule', component: ScheduleComponent },
   { path: 'team', component: TeamComponent },
   { path: 'blog', component: BlogComponent },
-  { path: '', pathMatch: 'full', redirectTo: '/home' }
+  { path: '', pathMatch: 'full', redirectTo: '/home' },
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({
