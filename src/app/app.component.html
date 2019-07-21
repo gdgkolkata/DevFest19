@@ -14,6 +14,12 @@
         routerLinkActive="router-link-active"
         [routerLink]="link.path">{{link.label}}</a>
     </mat-nav-list>
+    <a mat-list-item
+      href="https://gdgkolkata.org/about"
+      target="_blank" rel="noopener noreferrer">Community Guidelines</a>
+    <a mat-list-item
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfnitNzIblk6ciVqYgIHRM303Dl44ZvpAtMcqvqWQeQUBYLdw/viewform?usp=sf_link"
+      target="_blank" rel="noopener noreferrer">Apply for a Pass</a>
   </mat-sidenav>
   <mat-sidenav-content cdkScrollable #body>
     <mat-toolbar #topBar
@@ -28,12 +34,10 @@
             *ngFor="let link of navLinks"
             [routerLink]="link.path"
             routerLinkActive="mat-flat-button mat-primary">{{link.label}}</a>
-          <!-- <a mat-button>sign in</a> -->
-          <a mat-button style="color :rgb(102, 103, 104); font-weight:600; font-size:15px; font-family: 'Open Sans', sans-serif;"
+          <a mat-button
             href="https://gdgkolkata.org/about"
             target="_blank" rel="noopener noreferrer">Community Guidelines</a>
-
-          <a mat-button style="color :rgb(39, 80, 202); font-weight:600; font-size:15px; font-family: 'Open Sans', sans-serif;"
+          <a mat-button
             href="https://docs.google.com/forms/d/e/1FAIpQLSfnitNzIblk6ciVqYgIHRM303Dl44ZvpAtMcqvqWQeQUBYLdw/viewform?usp=sf_link"
             target="_blank" rel="noopener noreferrer">Apply for a Pass</a>
         </ng-container>
