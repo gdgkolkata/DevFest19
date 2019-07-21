@@ -3,18 +3,9 @@
     <div class="mat-display-2">Schedule</div>
   </div>
 </div>
+<mat-divider class="divider"></mat-divider>
 <div class="container">
-  <nav mat-tab-nav-bar>
-    <a mat-tab-link active="true" *ngIf="schedules.length">
-      {{schedules[0].date | date:'MMMM d'}}
-    </a>
-  </nav>
-</div>
-<mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
-<app-filter></app-filter>
-<div class="container time-slot-container">
-  <ng-container *ngFor="let schedule of schedules">
-    <app-time-slot *ngFor="let timeSlot of schedule.timeSlots"
-      [timeSlot]="timeSlot"></app-time-slot>
-  </ng-container>
+  <div class="sessionize-loader" #sessionizeGrid>
+    <div class="sz-spinner"></div>
+  </div>
 </div>

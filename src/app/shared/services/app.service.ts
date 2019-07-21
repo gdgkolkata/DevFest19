@@ -21,8 +21,11 @@ export class AppService {
     return this.http.get(`${this.endpoint}/speakers`) as Observable<Speaker[]>;
   }
 
-  getSchedule(): Observable<Schedule[]> {
-    return this.http.get(`${this.endpoint}/grid`) as Observable<Schedule[]>;
+  getSchedule() {
+    return this.http.get(
+      'https://sessionize.com/api/v2/flww2z1f/view/Grid?under=True',
+      { responseType: 'text' }
+    );
   }
 
   getTeam(): Observable<Member[]> {
