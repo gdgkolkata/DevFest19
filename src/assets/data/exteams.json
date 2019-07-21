@@ -19,5 +19,19 @@
         "twitter": "#",
         "linkedin": "https://www.linkedin.com/in/sabyasachi-mukhopadhyay-303a1027/",
         "profileImage": "SabyasachiM.jpeg"
+    },
+    {
+        "name": "Sumitra Bagchi",
+        "designation": "Co-Organizer @ GDG Cloud Kolkata",
+        "twitter": "https://twitter.com/sumitrabagchi",
+        "linkedin": "https://www.linkedin.com/in/sumitra-bagchi-880b00140/",
+        "profileImage": "SumitraB.jpeg"
+    },
+    {
+        "name": "Abhishek Sur",
+        "designation": "Co-Organizer @ GDG Cloud Kolkata",
+        "twitter": "https://twitter.com/abhi2434",
+        "linkedin": "https://www.linkedin.com/in/abhi2434/",
+        "profileImage": "AbhishekS.jpeg"
     }
 ]
