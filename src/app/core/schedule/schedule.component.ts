@@ -7,7 +7,6 @@ import { DynamicScriptLoaderService } from 'src/app/shared/services/dynamic-scri
   styleUrls: ['./schedule.component.scss']
 })
 export class ScheduleComponent implements AfterViewInit {
-  isLoading = true;
   @ViewChild('sessionizeGrid', { static: false }) sessionizeGridEl: ElementRef;
   sessionizeGrid: HTMLDivElement;
 
@@ -17,7 +16,7 @@ export class ScheduleComponent implements AfterViewInit {
     this.sessionizeGrid = this.sessionizeGridEl.nativeElement;
     this.dynamicScriptLoader
       .load('grid', this.sessionizeGrid)
-      .then(_ => (this.isLoading = false))
+      .then(console.log)
       .catch(console.log);
   }
 }

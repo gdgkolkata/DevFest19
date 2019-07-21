@@ -6,6 +6,7 @@ interface Scripts {
 }
 
 export const ScriptStore: Scripts[] = [
+  // { name: 'grid', src: 'https://sessionize.com/api/v2/flww2z1f/view/grid' }
   { name: 'grid', src: '../../../assets/assets-custom/sessionize.grid.js' }
 ];
 

@@ -23,7 +23,12 @@ function sessionize_load() {
   }
 }
 
-sessionize_load();
+if (typeof sessionize_loaded === 'undefined') {
+  sessionize_loaded = true;
+  document.addEventListener('DOMContentLoaded', function(event) {
+    sessionize_load();
+  });
+}
 
 ('use strict');
 function sessionize_showmodal(n, t, i) {
