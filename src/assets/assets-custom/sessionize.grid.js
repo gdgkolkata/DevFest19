@@ -1,35 +1,3 @@
-/* based on W3Data by W3Schools.com */
-function sessionize_load() {
-  var z, i, elmnt, file, xhttp;
-  z = document.getElementsByTagName('*');
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    file = elmnt.getAttribute('data-sessionize-load-url');
-    if (file) {
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState === 4 && this.status === 200) {
-          elmnt.innerHTML = this.responseText;
-          elmnt.removeAttribute('data-sessionize-load-url');
-          sessionize_load();
-
-          if (sessionize_onload) sessionize_onload();
-        }
-      };
-      xhttp.open('GET', file, true);
-      xhttp.send();
-      return;
-    }
-  }
-}
-
-if (typeof sessionize_loaded === 'undefined') {
-  sessionize_loaded = true;
-  document.addEventListener('DOMContentLoaded', function(event) {
-    sessionize_load();
-  });
-}
-
 ('use strict');
 function sessionize_showmodal(n, t, i) {
   var r = document.getElementById('sz-modal-container'),
