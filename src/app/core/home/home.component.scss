@@ -24,8 +24,13 @@ $primary: #4885ed;
 
 .partner-logo {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  place-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  a {
+    display: grid;
+    place-content: center;
+  }
 
   img {
     width: 100%;
