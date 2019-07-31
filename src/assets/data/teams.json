@@ -47,7 +47,6 @@
         "twitter": "https://twitter.com/RisingSayak",
         "linkedin": "https://www.linkedin.com/in/sayak-paul/",
         "profileImage": "SayakP.jpeg"
-        
     },
     {
         "name": "Shuvam Manna",
@@ -69,6 +68,12 @@
         "twitter": "https://twitter.com/RahaRitwik",
         "linkedin": "https://www.linkedin.com/in/ritwik-raha/",
         "profileImage": "RitwikR.jpeg"
-        
+    },
+    {
+        "name": "Debmallya Bhattacharya",
+        "designation": "Event Organizer",
+        "twitter": "https://twitter.com/batbrain9392",
+        "linkedin": "https://www.linkedin.com/in/debmallya-bhattacharya-a93507aa/",
+        "profileImage": "DebmallyaB.jpeg"
     }
 ]
