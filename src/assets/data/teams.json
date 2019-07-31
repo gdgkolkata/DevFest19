@@ -42,6 +42,13 @@
         "profileImage": "IndranilD.jpeg"
     },
     {
+        "name": "Debmallya Bhattacharya",
+        "designation": "Organizer",
+        "twitter": "https://twitter.com/batbrain9392",
+        "linkedin": "https://www.linkedin.com/in/debmallya-bhattacharya-a93507aa/",
+        "profileImage": "DebmallyaB.jpeg"
+    },
+    {
         "name": "Sayak Paul",
         "designation": "Event Organizer",
         "twitter": "https://twitter.com/RisingSayak",
@@ -68,12 +75,5 @@
         "twitter": "https://twitter.com/RahaRitwik",
         "linkedin": "https://www.linkedin.com/in/ritwik-raha/",
         "profileImage": "RitwikR.jpeg"
-    },
-    {
-        "name": "Debmallya Bhattacharya",
-        "designation": "Event Organizer",
-        "twitter": "https://twitter.com/batbrain9392",
-        "linkedin": "https://www.linkedin.com/in/debmallya-bhattacharya-a93507aa/",
-        "profileImage": "DebmallyaB.jpeg"
     }
 ]
