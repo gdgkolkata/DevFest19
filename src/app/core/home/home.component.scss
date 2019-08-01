@@ -47,6 +47,20 @@
 
   .sponsor-type {
     text-transform: capitalize;
+    color: #000;
+
+    &.principal {
+      color: #3f51b5;
+    }
+    &.platinum {
+      color: #000;
+    }
+    &.gold {
+      color: #000;
+    }
+    &.bronze {
+      color: #000;
+    }
   }
 
   img {
