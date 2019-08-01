@@ -86,8 +86,6 @@ THE SOFTWARE.
 
 @angular/material/snack-bar
 
-@angular/material/tabs
-
 @angular/material/toolbar
 
 @angular/material/tooltip
