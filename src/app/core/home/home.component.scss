@@ -32,12 +32,21 @@
 
 .partner-logo {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  @media (min-width: 758px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
 
   a {
     display: grid;
-    place-content: center;
+    grid-template-rows: max-content auto;
+    place-items: center;
+  }
+
+  .sponsor-type {
+    text-transform: capitalize;
   }
 
   img {
