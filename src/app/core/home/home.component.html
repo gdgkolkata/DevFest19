@@ -1,52 +1,27 @@
-<style>
-  .videoWrapper {
-    position: relative;
-    padding-bottom: 40.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-}
-.videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    max-height: 150px;
-    min-height: 150px;
-}
-
-@media only screen and (min-width: 600px) {
-
-  .videoWrapper iframe {
-    min-height: 50vh !important;
-    min-width:60vh !important;
-}
-}
-</style>
-
 <div class="master-container mat-subheading-2">
-    <section class="header-img container">
-        <img class="w-100" src="assets/img/devfest_header.png">
-      </section>
+  <section class="header-img container">
+    <img class="w-100" src="assets/img/devfest_header.png">
+  </section>
   <section class="col-2 container">
     <div>
      <div class="section-title mat-display-1" style="font-family: 'Open Sans', sans-serif;">GDG DevFest Kolkata</div>
       <p style="font-size:17px; font-family: 'Open Sans', sans-serif;"><b>Registration is Open!</b></p>
       <p style="font-size:17px; font-family: 'Open Sans', sans-serif;">
-        Join us on Sunday, 4 August, 2019 at <b style="color:rgb(44, 90, 228);">Novotel Kolkata</b> for a day filled with amazing Tech talks and demos.
+        Join us on Sunday, 4 August, 2019 at <a class="link" href="">Novotel Kolkata</a> for a day filled with amazing Tech talks and demos.
       </p>
       <p style="font-size:17px; font-family: 'Open Sans', sans-serif;">
-        Unable to attend? The DevFest Sessions will be available on YouTube in a few days. Make sure to sign up to receive event information and updates. Take part in the conversation on Twitter by using the hashtags <b style="color:rgb(92, 92, 95)">#DevFestKol</b> and <b style="color:rgb(92, 92, 95)">#DevFest19</b>.
+        Unable to attend? The DevFest Sessions will be available on YouTube in a few days. Make sure to sign up to receive event information and updates.
+        Take part in the conversation on Twitter by using the hashtags <b>#DevFestKol</b> and <b>#DevFest19</b>.
       </p>
       <p>&nbsp;</p>
-      <a class="link" style="background-color :rgb(44, 90, 228); color:white; padding:9px 17px 9px 17px; min-width:200px; text-decoration:none; border-radius:4px; font-size:14px; font-family: 'Open Sans', sans-serif;" href="https://docs.google.com/forms/d/e/1FAIpQLSfnitNzIblk6ciVqYgIHRM303Dl44ZvpAtMcqvqWQeQUBYLdw/viewform?usp=sf_link" target="_blank">Apply for Your Pass Now</a>
-
+      <a mat-raised-button color="primary"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfnitNzIblk6ciVqYgIHRM303Dl44ZvpAtMcqvqWQeQUBYLdw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
+        Apply for Your Pass Now</a>
     </div>
-
     <div class="img-container">
-        <div class="videoWrapper" style="text-align:center;">
-            <iframe style="width: 100%; border-radius: 3px;" src="https://www.youtube.com/embed/jG2_TN-jfH4" frameborder="0" controls="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-
+      <iframe class="video" src="https://www.youtube.com/embed/jG2_TN-jfH4" frameborder="0" controls="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
     </div>
   </section>
   <section class="col-2 col-reverse container">
@@ -63,7 +38,8 @@
       </div>
       <p>&nbsp;</p>
       <p>
-      <a class="link" style="background-color :white; color:rgb(44, 90, 228); padding:8px 16px 8px 16px; border:1px solid rgb(216, 211, 211); text-decoration:none; border-radius:4px; font-size:14px; font-family: 'Open Sans', sans-serif;" href="https://forms.gle/BBCKfdrCDGDEwiEq8" target="_blank" rel="noopener noreferrer">
+      <a mat-stroked-button color="primary"
+        href="https://forms.gle/BBCKfdrCDGDEwiEq8" target="_blank" rel="noopener noreferrer">
         Call for Showcase
       </a>
     </p>
@@ -108,43 +84,44 @@
     <div>
       <div class="section-title mat-display-1" style="font-family: 'Open Sans', sans-serif;">Highlights</div>
       <div style="font-size:17px; font-family: 'Open Sans', sans-serif;">
-       DevFest Kolkata 2018 was the largest gathering of Google Developer Groups in the Eastern region of India! Here's a showdown of the event. Find the complete album <a class="link" style="text-decoration: none; color :rgb(48, 90, 216); font-weight:650;" href="https://photos.app.goo.gl/b6WCNuE7xQDt6BnA8" target="_blank" rel="noopener noreferrer">Here</a>.
+        DevFest Kolkata 2018 was the largest gathering of Google Developer Groups in the Eastern region of India!
+        Here's a showdown of the event. Find the complete album
+        <a class="link" href="https://photos.app.goo.gl/b6WCNuE7xQDt6BnA8" target="_blank" rel="noopener noreferrer">Here</a>.
       </div>
       <p>&nbsp;</p>
       <section class="col-2 container">
-          <div class="img-container">
-              <img class="w-100" src="assets/img/1.jpg" style="border-radius:4px;"/>
-            </div>
-
-          <div class="img-container">
-            <img class="w-100" src="assets/img/2.png" style="border-radius:4px;"/>
-          </div>
-        </section>
-
-        <br>
+        <div class="img-container">
+          <img class="w-100" src="assets/img/1.jpg" style="border-radius:4px;"/>
+        </div>
+        <div class="img-container">
+          <img class="w-100" src="assets/img/2.png" style="border-radius:4px;"/>
+        </div>
+      </section>
       <br>
-
+      <br>
     </div>
   </section>
   <section class="col-2 container">
-      <div>
-       <div class="section-title mat-display-1" style="font-family: 'Open Sans', sans-serif;">Share your Story</div>
-        <p style="font-size:17px; font-family: 'Open Sans', sans-serif;">
-          Share your experience at <b style="color:rgb(44, 90, 228);">DevFest '18</b> and what you loved/ did not love about the event.
-        </p>
-        <p style="font-size:17px; font-family: 'Open Sans', sans-serif;">
-         We would be looking forward to hearing your DevFest Stories and how that has shaped your actions, work, passion and maybe life in general. Made some amazing friends at DevFest? Tell us about that.
-        Use the hashtags <b>#DevFestKol</b> and <b>#DevFest19</b>.</p>
-        <p>&nbsp;</p>
-        <a class="link" style="background-color :rgb(44, 90, 228); color:white; padding:9px 17px 9px 17px; text-decoration:none; border-radius:4px; font-size:14px; font-family: 'Open Sans', sans-serif;" href="https://twitter.com/intent/tweet?text=#DevFestKol" target="_blank">#DevFestKol</a>
-        <a class="link" style="background-color :white; color:rgb(44, 90, 228); margin: 10px; padding:8px 16px 8px 16px; border:1px solid rgb(216, 211, 211); margin-left:10px; text-decoration:none; border-radius:4px; font-size:14px; font-family: 'Open Sans', sans-serif;" href="https://twitter.com/intent/tweet?text=#DevFest19" target="_blank">#DevFest19</a>
-
-      </div>
-
-      <div class="img-container">
-          <img class="w-100" src="assets/img/devfest.png" style="border-radius:4px;"/>
-      </div>
-    </section>
+    <div>
+      <div class="section-title mat-display-1" style="font-family: 'Open Sans', sans-serif;">Share your Story</div>
+      <p style="font-size:17px; font-family: 'Open Sans', sans-serif;">
+        Share your experience at <a class="link" href="">DevFest '18</a> and what you loved/ did not love about the event.
+      </p>
+      <p style="font-size:17px; font-family: 'Open Sans', sans-serif;">
+        We would be looking forward to hearing your DevFest Stories and how that has shaped your actions, work, passion and maybe life in general.
+        Made some amazing friends at DevFest? Tell us about that. Use the hashtags <b>#DevFestKol</b> and <b>#DevFest19</b>.</p>
+      <p>&nbsp;</p>
+      <a mat-flat-button color="primary"
+        href="https://twitter.com/intent/tweet?text=#DevFestKol" target="_blank" rel="noopener noreferrer">
+        #DevFestKol</a>
+      <a mat-stroked-button color="primary" style="margin-left: 10px"
+        href="https://twitter.com/intent/tweet?text=#DevFest19" target="_blank" rel="noopener noreferrer">
+        #DevFest19</a>
+    </div>
+    <div class="img-container">
+      <img class="w-100" src="assets/img/devfest.png" style="border-radius:4px;"/>
+    </div>
+  </section>
 
 
   <section class="col-2 col-reverse container">
@@ -160,55 +137,66 @@
         </p>
       </div>
       <p>&nbsp;</p>
-      <a class="link" style="background-color :white; color:rgb(44, 90, 228); margin: 10px; padding:8px 16px 8px 16px; border:1px solid rgb(216, 211, 211); text-decoration:none; border-radius:4px; font-size:14px; font-family: 'Open Sans', sans-serif;" routerLink="/team">Meet The Team</a>
+      <a mat-stroked-button color="primary" routerLink="/team">Meet The Team</a>
     </div>
     <div class="img-container">
       <img class="w-100" src="assets/img/team.jpg" style="border-radius:4px;"/>
     </div>
   </section>
+
   <section class="container" style="grid-template-columns: unset;">
     <div>
       <div class="section-title mat-display-1" style="font-family: 'Open Sans', sans-serif;">Partners</div>
       <div style="font-size:17px; font-family: 'Open Sans', sans-serif;">
         We thank our Partners for their support towards the community. If you want to be showcased through DevFest Kolkata, click
-        <a class="link" style="text-decoration: none; color :rgb(48, 90, 216); font-weight:450;" href="https://forms.gle/z8ZivnfjFQYbX55T6" target="_blank" rel="noopener noreferrer">Here</a>
+        <a class="link" href="https://forms.gle/z8ZivnfjFQYbX55T6" target="_blank" rel="noopener noreferrer">Here</a>
         for Sponsorship details.
       </div>
       <p>&nbsp;</p>
       <br>
       <div class="partner-logo">
         <a href="https://developers.google.com/" target="_blank" rel="noopener noreferrer">
+          <b class="sponsor-type principal">principal partner</b>
           <img src="assets/img/logos/gd.png"/>
         </a>
         <a href="https://elastic.co/" target="_blank" rel="noopener noreferrer">
+          <b class="sponsor-type platinum">platinum sponsor</b>
           <img src="assets/img/logos/elastic.png"/>
         </a>
         <a href="https://www.shroffpublishers.com/" target="_blank" rel="noopener noreferrer">
+          <b class="sponsor-type gold">gold sponsor</b>
           <img src="assets/img/logos/spd_logo.png"/>
         </a>
         <a href="https://www.jetbrains.com/" target="_blank" rel="noopener noreferrer">
+          <b class="sponsor-type"></b>
           <img src="assets/img/jetbrains.png"/>
         </a>
         <a href="https://www.manning.com/" target="_blank" rel="noopener noreferrer">
+          <b class="sponsor-type">associative sponsor</b>
           <img src="assets/img/logos/manning.png"/>
         </a>
         <a href="https://www.pyimagesearch.com/" target="_blank" rel="noopener noreferrer">
+          <b class="sponsor-type"></b>
           <img src="assets/img/logos/pyimagesearch.png"/>
         </a>
         <a href="https://www.in.droidcon.com/" target="_blank" rel="noopener noreferrer">
+          <b class="sponsor-type">community partner</b>
           <img src="assets/img/logos/chennai_droidcon.png"/>
         </a>
         <a href="https://www.uvsity.com/" target="_blank" rel="noopener noreferrer">
+          <b class="sponsor-type bronze">bronze sponsor</b>
           <img src="assets/img/logos/uvsity.png"/>
         </a>
       </div>
     </div>
   </section>
+
   <section class="container" style="grid-template-columns: unset;">
-      <div class="section-title mat-display-1" style="font-family: 'Open Sans', sans-serif;">Location</div>
-      <div style="font-size:17px; font-family: 'Open Sans', sans-serif;">
-          DevFest Kolkata 2019 shall take place at Novotel Kolkata, at CF Block, Action Area IC, Newtown. <a class="link" style="text-decoration: none; color :rgb(48, 90, 216); font-weight:650;" href="http://novotelkolkata.com/" target="_blank" rel="noopener noreferrer">Learn more</a>.
-         </div>
+    <div class="section-title mat-display-1" style="font-family: 'Open Sans', sans-serif;">Location</div>
+    <div style="font-size:17px; font-family: 'Open Sans', sans-serif;">
+      DevFest Kolkata 2019 shall take place at Novotel Kolkata, at CF Block, Action Area IC, Newtown.
+      <a class="link" href="http://novotelkolkata.com/" target="_blank" rel="noopener noreferrer">Learn more</a>.
+    </div>
   </section>
 </div>
 
