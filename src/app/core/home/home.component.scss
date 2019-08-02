@@ -1,10 +1,12 @@
-$primary: #4885ed;
-
 [class*="mat-display-"],
 [class*="mat-headline"],
 [class*="mat-title"],
 [class*="mat-subheading-"] {
   margin: 0;
+}
+
+[class*="mat-stroked-button"] {
+  font-weight: bold;
 }
 
 .master-container {
@@ -22,10 +24,44 @@ $primary: #4885ed;
   row-gap: 48px;
 }
 
+.video {
+  width: 100%;
+  min-height: 250px;
+  height: 100%;
+}
+
 .partner-logo {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  place-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  @media (min-width: 758px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  a {
+    display: grid;
+    grid-template-rows: max-content auto;
+    place-items: center;
+  }
+
+  .sponsor-type {
+    text-transform: capitalize;
+    color: #5e5a5a;
+
+    &.principal {
+      color: #4885ed;
+    }
+    &.platinum {
+      color: #000;
+    }
+    &.gold {
+      color: #f4c20d;
+    }
+    &.bronze {
+      color: #d02c2c;
+    }
+  }
 
   img {
     width: 100%;
